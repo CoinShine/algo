@@ -1,1 +1,1 @@
-# algo
+# algo exercises
