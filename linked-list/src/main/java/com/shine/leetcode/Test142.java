@@ -31,7 +31,7 @@ public class Test142 {
 				return null;
 			}
 			fast = fast.next;
-			if (fast.equals(slow)) {
+			if (slow.equals(fast)) {
 				//说明有环
 				meet = fast;
 				break;
