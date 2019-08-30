@@ -43,11 +43,11 @@ public class Test142 {
 		}
 		//两指针分别从head和meet遍历
 		while (true) {
-			head = head.next;
-			meet = meet.next;
-			if(head.equals(meet)){
+			if(head == meet){
 				return head;
 			}
+			head = head.next;
+			meet = meet.next;
 		}
 	}
 }
