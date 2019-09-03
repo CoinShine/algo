@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Vector;
 
 /**
  * description: 复杂链表复制
@@ -23,7 +22,6 @@ public class Test138 {
 	public Node copyRandomList(Node head) {
 		Map<Node,Integer> oldMap  = new HashMap<>();
 		Map<Integer,Node> newMap  = new HashMap<>();
-		Vector<Node> vector = new Vector<>();
 		Node position = head;
 		int index = 0;
 		//第一次遍历分别将两个map赋值
@@ -35,7 +33,7 @@ public class Test138 {
 		}
 		position = head;
 		index = 0;
-		Node newNodeHead = vector.get(0);
+		Node newNodeHead = newMap.get(0);
 		Node newNode = newNodeHead;
 		while (position!=null){
 			//遍历原始链表
