@@ -3,6 +3,8 @@ package com.shine.string.leetcode;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
+import java.util.stream.IntStream;
+
 
 /**
  * DESCRIPTION:求一个字符串中最长回文串子串
@@ -31,12 +33,12 @@ public class Test05 {
 			return "";
 		}
 		int length = s.length();
-		for (int i = 0; i < length; i++) {
-			//当回文串为基数时 回文串关于i位对称
-			findLongestPalindrome(s, i,i);
-			//当回文串为偶数时 第i位和第i+1位相同
-			findLongestPalindrome(s, i, i+1);
-		}
+		//当回文串为基数时 回文串关于i位对称
+		//当回文串为偶数时 第i位和第i+1位相同
+		IntStream.range(0, length).forEach(i -> {
+			findLongestPalindrome(s, i, i);
+			findLongestPalindrome(s, i, i + 1);
+		});
 		return palindrome;
 
 	}
@@ -62,7 +64,11 @@ public class Test05 {
 	public void testPalindrome(){
 		String s = "google";
 		String str = longestPalindrome(s);
-		System.out.println(str);
+		//System.out.println(str);
+		IntStream.range(0,100).forEach(i->System.out.println("hello : "+i));
 	}
+
+
+
 }
 
