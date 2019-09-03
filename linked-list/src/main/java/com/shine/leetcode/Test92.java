@@ -25,6 +25,9 @@ public class Test92 {
 			head=head.next;
 		}
 		ListNode modifyListTail = head; // 逆置后链表的尾部
+		if(modifyListTail==null){
+			return result;
+		}
 		ListNode newHead = null;
 
 		while(head!=null && len>0){
@@ -51,6 +54,7 @@ public class Test92 {
 		System.out.println(listNode);
 	}
 
+	@SuppressWarnings("unchecked")
 	private ListNode init() {
 		ListNode listNode = new ListNode(1);
 		listNode.next = new ListNode(2);
