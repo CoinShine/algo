@@ -40,6 +40,23 @@ public class Test160 {
 	}
 
 	/**
+	 * 求两个链表的交点（巧妙解法）
+	 * @param headA
+	 * @param headB
+	 * @return
+	 */
+	public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+		if(headA==null && headB == null) return null;
+		ListNode PA = headA;
+		ListNode PB = headB;
+		while (PA!=PB){
+			PA = PA==null ? headB: PA.next;
+			PB = PB==null ? headA: PB.next;
+		}
+		return PB;
+	}
+
+	/**
 	 * 获取链表的长度
 	 *
 	 * @param head
