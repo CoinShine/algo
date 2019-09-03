@@ -26,7 +26,7 @@ public class Test24 {
 	}
 
 	/**
-	 * 递归实现
+	 * 递归实现 交换相邻节点
 	 * @param head
 	 * @return
 	 */
