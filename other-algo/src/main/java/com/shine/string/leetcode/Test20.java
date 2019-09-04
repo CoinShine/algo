@@ -23,20 +23,22 @@ public class Test20 {
 
 		int length = s.length();
 		for (int i = 0; i < length; i++) {
-			if(map.containsValue(s.charAt(i))){
-				stack.push(s.charAt(i));
-			}else{
-				if(stack.empty() || !map.get(s.charAt(i)).equals(stack.pop())){
+			char c = s.charAt(i);
+			if (map.containsKey(c)) {
+				char topElement = stack.empty() ? '#' : stack.pop();
+				if (topElement != map.get(c)) {
 					return false;
 				}
+			} else {
+				stack.push(c);
 			}
 		}
-		return stack.empty();
+		return stack.isEmpty();
 	}
 
 	@Test
 	public void test01(){
-		String s = "(";
+		String s = "abc()";
 		boolean valid = isValid(s);
 		System.out.println(valid);
 	}

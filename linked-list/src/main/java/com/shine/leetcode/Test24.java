@@ -10,6 +10,7 @@ import com.shine.pojo.ListNode;
  * @version 1.0
  */
 public class Test24 {
+	@SuppressWarnings({"unchecked", "ConstantConditions"})
 	public ListNode swapPairs(ListNode head) {
 		ListNode pre = new ListNode(0);
 		pre.next = head;
