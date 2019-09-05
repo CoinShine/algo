@@ -30,7 +30,8 @@ public class Test225 {
 
 	/** Removes the element on top of the stack and returns that element. */
 	public int pop() {
-		Integer peek=-1;
+		dataQueue.poll();
+		Integer peek=Integer.MIN_VALUE;
 		if(!dataQueue.isEmpty()){
 			 peek = dataQueue.peek();
 			dataQueue.remove();
@@ -43,7 +44,7 @@ public class Test225 {
 		if(!dataQueue.isEmpty()){
 			return dataQueue.peek();
 		}
-		return -1;
+		return Integer.MIN_VALUE;
 	}
 
 	/** Returns whether the stack is empty. */
