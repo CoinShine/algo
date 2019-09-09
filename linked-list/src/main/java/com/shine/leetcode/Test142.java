@@ -45,6 +45,6 @@ public class Test142 {
 			head = head.next;
 			meet = meet.next;
 		}
-		return meet;
+		return null;
 	}
 }
