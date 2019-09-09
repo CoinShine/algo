@@ -36,7 +36,7 @@ public class Test24 {
 			return head;
 		}
 		ListNode next = head.next;
-		head.next = swapPairs(next.next);
+		head.next = swapPairs2(next.next);
 		next.next=head;
 		return next;
 	}
