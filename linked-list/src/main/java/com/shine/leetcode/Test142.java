@@ -37,17 +37,14 @@ public class Test142 {
 				break;
 			}
 		}
-		//说明没有交点
-		if(meet==null){
-			return null;
-		}
 		//两指针分别从head和meet遍历
-		while (true) {
+		while (head!=null && meet!=null) {
 			if(head == meet){
 				return head;
 			}
 			head = head.next;
 			meet = meet.next;
 		}
+		return meet;
 	}
 }
