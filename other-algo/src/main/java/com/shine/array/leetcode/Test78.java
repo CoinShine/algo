@@ -28,6 +28,13 @@ public class Test78 {
 		return result;
 	}
 
+	/**
+	 * 递归实现一
+	 * @param i
+	 * @param nums
+	 * @param item
+	 * @param result
+	 */
 	public void generate(int i, int[] nums, List<Integer> item, List<List<Integer>> result) {
 		if (i >= nums.length) return;
 		item.add(nums[i]);
@@ -35,6 +42,23 @@ public class Test78 {
 		generate(i + 1, nums, item, result); // 将元素放入递归
 		item.remove(item.size() - 1); // 将元素取出
 		generate(i + 1, nums, item, result); // 取出元素后继续递归
+	}
+
+
+	/**
+	 * 递归实现二
+	 * @param i
+	 * @param nums
+	 * @param item
+	 * @param result
+	 */
+	public void generate2(int i, int[] nums, List<Integer> item, List<List<Integer>> result){
+		for(int j =i;j<nums.length;j++){
+			item.add(nums[j]);
+			result.add(new ArrayList<>(item));
+			generate2(j+1,nums,item,result);
+			item.remove(item.size()-1);
+		}
 	}
 
 	/**
