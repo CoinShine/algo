@@ -23,8 +23,8 @@ public class Test78 {
 	public List<List<Integer>> subsets(int[] nums) {
 		List<List<Integer>> result = new ArrayList<>();
 		List<Integer> item = new ArrayList<>();
+		generate2(0,nums,item,result);
 		result.add(item);
-		generate(0,nums,item,result);
 		return result;
 	}
 
@@ -36,7 +36,8 @@ public class Test78 {
 	 * @param result
 	 */
 	public void generate(int i, int[] nums, List<Integer> item, List<List<Integer>> result) {
-		if (i >= nums.length) return;
+		if (i >= nums.length)
+			return;
 		item.add(nums[i]);
 		result.add(new ArrayList<>(item));
 		generate(i + 1, nums, item, result); // 将元素放入递归
