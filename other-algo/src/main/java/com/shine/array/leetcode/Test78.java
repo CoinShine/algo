@@ -23,7 +23,7 @@ public class Test78 {
 	public List<List<Integer>> subsets(int[] nums) {
 		List<List<Integer>> result = new ArrayList<>();
 		List<Integer> item = new ArrayList<>();
-		generate2(0,nums,item,result);
+		generate(0,nums,item,result);
 		result.add(item);
 		return result;
 	}

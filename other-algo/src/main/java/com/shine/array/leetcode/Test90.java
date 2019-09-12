@@ -18,16 +18,14 @@ import java.util.Set;
 public class Test90 {
 	public List<List<Integer>> subsetsWithDup(int[] nums) {
 		Arrays.sort(nums); // 默认从小到大排序
-		List<List<Integer>> result = new ArrayList<>();
+		Set<List<Integer>> set  = new HashSet<>();
 		List<Integer> item = new ArrayList<>();
-		result.add(item);
-		generate(0, nums, item, result);
-
-		Set<List<Integer>> set = new HashSet<>(result); // 使用set去重
+		set.add(item);
+		generate(0, nums, item, set);
 		return new ArrayList<>(set); // 将结果转换成List返回
 	}
 
-	public void generate(int i, int[] nums, List<Integer> item, List<List<Integer>> result) {
+	public void generate(int i, int[] nums, List<Integer> item, Set<List<Integer>> result) {
 		if (i >= nums.length) return;
 		item.add(nums[i]);
 		result.add(new ArrayList<>(item));
@@ -39,7 +37,7 @@ public class Test90 {
 
 	public List<List<Integer>> subsetsWithDup2(int[] nums) {
 		Arrays.sort(nums); // 默认从小到大排序
-		List<List<Integer>> result = new ArrayList<>();
+		Set<List<Integer>> result = new HashSet<>();
 		int size = 1 << nums.length;
 		for (int i = 0; i < size; i++) {
 			List<Integer> item = new ArrayList<>();
@@ -50,8 +48,7 @@ public class Test90 {
 			}
 			result.add(item);
 		}
-		Set<List<Integer>> set = new HashSet<>(result); // 使用set去重
-		return new ArrayList<>(set); // 将结果转换成List返回
+		return new ArrayList<>(result); // 将结果转换成List返回
 	}
 
 	@Test
