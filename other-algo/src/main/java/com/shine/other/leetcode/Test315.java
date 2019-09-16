@@ -68,32 +68,29 @@ public class Test315 {
 	 * @param r
 	 */
 	private void mergeOfTwoSortedArrAndCountSmaller(int[] nums, int l, int mid, int r) {
-		// 3,4  1,2
-		for (int i = l; i <= r; i++) {
-			temp[i] = indexes[i];
-		}
+		temp = indexes.clone();
 		int i = l;
 		int j = mid + 1;
 		// 左边出列的时候，计数
-		for (int k = l; k <= r; k++) {
+		for (int m = l; m <= r; m++) {
 			if (i > mid) {
-				indexes[k] = temp[j];
+				indexes[m] = temp[j];
 				j++;
 			} else if (j > r) {
-				indexes[k] = temp[i];
+				indexes[m] = temp[i];
 				i++;
 				// 此时 j 用完了，[7,8,9 | 1,2,3]
 				// 之前的数就和后面的区间长度构成逆序
-				counter[indexes[k]] += (r - mid);
+				counter[indexes[m]] += (r - mid);
 			} else if (nums[temp[i]] <= nums[temp[j]]) {
-				indexes[k] = temp[i];
+				indexes[m] = temp[i];
 				i++;
 				// 此时 [4,5, 6   | 1,2,3 10 12 13]
 				//           mid          j
-				counter[indexes[k]] += (j - mid - 1);
+				counter[indexes[m]] += (j - mid - 1);
 			} else {
 				// nums[indexes[i]] > nums[indexes[j]] 构成逆序
-				indexes[k] = temp[j];
+				indexes[m] = temp[j];
 				j++;
 			}
 		}
