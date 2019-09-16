@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * description: 生成括号
+ * description: 生成括号 使用递归
  * 当前可以放置左括号的数量，当前可以放置右边括号的数量
  *
  * @author shine

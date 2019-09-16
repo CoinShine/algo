@@ -35,7 +35,7 @@ public class Test946 {
 	@Test
 	public void test01() {
 		int[] pushed = {1, 2, 3, 4, 5};
-		int[] popped = {3, 1, 2, 4, 5};
+		int[] popped = {3, 2,4, 5,1};
 		boolean b = validateStackSequences(pushed, popped);
 		System.out.println(b);
 	}
