@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * description: 组合数之和
+ * description: 组合数之和（回溯）
  * 所有数字（包括目标数）都是正整数。
  * 解集不能包含重复的组合。
  * 在递归过程中将 大于目标集合剪掉

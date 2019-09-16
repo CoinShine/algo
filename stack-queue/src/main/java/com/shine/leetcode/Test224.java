@@ -3,7 +3,7 @@ package com.shine.leetcode;
 import java.util.Stack;
 
 /**
- * description:简单的计数器实现
+ * description:简单的计算器实现
  * 使用有限状态自动机进行处理
  *
  * @author shine
