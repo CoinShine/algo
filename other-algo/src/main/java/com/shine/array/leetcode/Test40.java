@@ -29,7 +29,7 @@ public class Test40 {
 	}
 
 	public void generate(int i, int[] nums, List<Integer> item, Set<List<Integer>> result, int target,int sum) {
-		if (i >= nums.length || sum>target ) return;
+		if (i >= nums.length || sum>target ) return; // 剪枝
 		sum+=nums[i];
 		item.add(nums[i]);
 		if(sum==target){
