@@ -54,7 +54,7 @@ public class BinarySearchBash {
 				high = mid-1;
 			}
 		}
-		if(high<n && a[high] == key){
+		if(high>=0 && a[high] == key){
 			return high;
 		}else {
 			return -1;
