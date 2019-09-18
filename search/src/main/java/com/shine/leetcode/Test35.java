@@ -22,7 +22,7 @@ public class Test35 {
 			else if (target > nums[mid]) begin = mid + 1;
 			else end = mid - 1;
 		}
-		// 不在数组中，返回位置
+		// 不在数组中，返回位置 已包含边界mid=0和mid=nums.length的情况
 		return target > nums[mid] ? mid + 1 : mid;
 	}
 
