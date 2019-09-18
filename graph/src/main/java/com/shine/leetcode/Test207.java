@@ -1,4 +1,4 @@
-package com.shine.pojo.leetcode;
+package com.shine.leetcode;
 
 import org.junit.Test;
 
