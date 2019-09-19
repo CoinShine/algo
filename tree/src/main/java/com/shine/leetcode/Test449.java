@@ -50,7 +50,7 @@ public class Test449 {
 		if(root==null) return;
 		String val = root.val + "#";  // string data+=val 1.8在堆中存储的是对象指向同一个地址
 		data.append(val);
-		preOrder(root.left,data); // 遍历左子树
+		preOrder(root.left,data); // 遍历左子树  方法局部变量调用 data 需要传引用 由于string存在于string常量池中。所以用stringbuilder，否则返回为空
 		preOrder(root.right,data); //遍历右子树
 	}
 
