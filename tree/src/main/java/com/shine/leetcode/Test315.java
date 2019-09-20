@@ -3,6 +3,7 @@ package com.shine.leetcode;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public class Test315 {
 		count.add(0); // 第一个节点count_small = 0
 
 		for (int i = 1; i < list.size(); i++) {
-			int[] count_small = new int[]{0}; // 方法局部变量调用需要存引用 否则返回为空 int count_small =0;是有问题的
+			int[] count_small = new int[]{0}; // 方法局部变量调用需要存引用 基本数据类型返回为空 int count_small =0;是有问题的
 			insert_BSTree(list.get(0), list.get(i), count_small);
 			count.add(count_small[0]);
 		}
@@ -69,17 +70,17 @@ public class Test315 {
 		}
 	}
 
-	final int a = 0;
 	@Test
 	public void test01(){
-		int[] nums={5,6,2,1};
-		List<Integer> integers = countSmaller(nums);
-		System.out.println(integers.toString());
-		//test02(a);
-		//System.out.println(a);
+		//int[] nums={5,6,2,1};
+		//List<Integer> integers = countSmaller(nums);
+		//System.out.println(integers.toString());
+		int[] a = new int[]{0};
+		test02(a);
+		System.out.println(Arrays.toString(a));
 	}
 
-	private void test02(int b){
-		b=b+10;
+	private void test02(int[] b){
+		b[0]=10;
 	}
 }
