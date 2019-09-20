@@ -45,7 +45,7 @@
 |    40    | [组合数之和II](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test40.java) | Medium |    低    |
 |    22    | [生成合法括号](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test22.java) | Medium |    中    |
 |    51    | [N皇后](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test51.java) |  Hard  |    中    |
-|   315    | [右侧小于当前元素](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test315.java) |  Hard  |    低    |
+|   315    | [右侧小于当前元素(归并)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test315.java) |  Hard  |    低    |
 
 ### 树、图
 
@@ -58,19 +58,17 @@
 |   199    | [二叉树右视图](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test199.java) | Medium |    中    |
 |   207    | [课程安排(图)](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test207.java) | Medium |    低    |
 
-### 查找 
+### 搜索、查找 
 
-| 题目序号 | 问题描述 | 难度 | 出现频次 |
-| :------: | :------: | :--: | :------: |
-|          |          |      |          |
+| 题目序号 |                           问题描述                           |  难度  | 出现频次 |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|    35    | [插入位置(二分)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test35.java) |  Easy  |   很低   |
+|    34    | [有重复数字区间查找(二分)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test34.java) | Medium |    低    |
+|    33    | [旋转数组查找](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test33.java) | Medium |    中    |
+|   449    | [二叉查找树编码与解码](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test449.java) | Medium |    中    |
+|   315    | [逆序数(二叉查找树)](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test315.java) |  Hard  |    低    |
 
 ### 排序 
-
-| 题目序号 | 问题描述 | 难度 | 出现频次 |
-| :------: | :------: | :--: | :------: |
-|          |          |      |          |
-
-### 搜索
 
 | 题目序号 | 问题描述 | 难度 | 出现频次 |
 | :------: | :------: | :--: | :------: |
