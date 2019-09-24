@@ -60,13 +60,18 @@
 
 ### 搜索、查找 
 
-| 题目序号 |           问题描述           |  难度  | 出现频次 |
-| :------: | :--------------------------: | :----: | :------: |
-|    35    |      [插入位置(二分)]()      |  Easy  |   很低   |
-|    34    | [有重复数字区间查找(二分)]() | Medium |    低    |
-|    33    |       [旋转数组查找]()       | Medium |    中    |
-|   449    |   [二叉查找树编码与解码]()   | Medium |    中    |
-|   315    |    [逆序数(二叉查找树)]()    |  Hard  |    低    |
+| 题目序号 |                 问题描述                  |  难度  | 出现频次 |
+| :------: | :---------------------------------------: | :----: | :------: |
+|    35    |            [插入位置(二分)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test35.java)             |  Easy  |   很低   |
+|    34    |       [有重复数字区间查找(二分)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test34.java)        | Medium |    低    |
+|    33    |             [旋转数组查找](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test33.java)              | Medium |    中    |
+|   449    |         [二叉查找树编码与解码](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test449.java)          | Medium |    中    |
+|   315    |          [逆序数(二叉查找树)](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test315.java)           |  Hard  |    低    |
+|   200    |         [岛屿数量(深搜、广搜)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test200.java)          | Medium |    中    |
+|   127    |      [单词接龙(宽搜、图、哈希表)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test127.java)       | Medium |   较低   |
+|   126    | [单词接龙2(记录路径的广搜、图、哈希表)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test126.java) |  Hard  |    低    |
+|   473    |   [火柴棍摆正方形(回溯深搜、位运算)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test473.java)    | Medium |    低    |
+|   407    | [收集雨水2(堆、带优先级的广度优先搜索)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test407.java) |  Hard  |   偏高   |
 
 ### 排序 
 
