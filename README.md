@@ -60,13 +60,13 @@
 
 ### 搜索、查找 
 
-| 题目序号 |                           问题描述                           |  难度  | 出现频次 |
-| :------: | :----------------------------------------------------------: | :----: | :------: |
-|    35    | [插入位置(二分)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test35.java) |  Easy  |   很低   |
-|    34    | [有重复数字区间查找(二分)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test34.java) | Medium |    低    |
-|    33    | [旋转数组查找](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test33.java) | Medium |    中    |
-|   449    | [二叉查找树编码与解码](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test449.java) | Medium |    中    |
-|   315    | [逆序数(二叉查找树)](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test315.java) |  Hard  |    低    |
+| 题目序号 |           问题描述           |  难度  | 出现频次 |
+| :------: | :--------------------------: | :----: | :------: |
+|    35    |      [插入位置(二分)]()      |  Easy  |   很低   |
+|    34    | [有重复数字区间查找(二分)]() | Medium |    低    |
+|    33    |       [旋转数组查找]()       | Medium |    中    |
+|   449    |   [二叉查找树编码与解码]()   | Medium |    中    |
+|   315    |    [逆序数(二叉查找树)]()    |  Hard  |    低    |
 
 ### 排序 
 
@@ -76,9 +76,15 @@
 
 ### 哈希表、字符串
 
-| 题目序号 |                           问题描述                           | 难度 | 出现频次 |
-| :------: | :----------------------------------------------------------: | :--: | :------: |
-|    20    | [判断是否是有效括号](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test20.java) | Easy |    中    |
+| 题目序号 |                           问题描述                           |  难度  | 出现频次 |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|    20    | [判断是否是有效括号](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test20.java) |  Easy  |    中    |
+|    05    | [求给定字符串的最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test05.java) | Medium |    高    |
+|   449    |                [通过给定字符构造最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test449.java)                |  Easy  |    低    |
+|    49    |                      [字母异位词分组](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test49.java)                      | Medium |    低    |
+|    03    |                      [无重复最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test03.java)                      | Medium |    高    |
+|   187    |                      [重复的DNA序列](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test187.java)                       | Medium |    低    |
+|    76    |                       [最小覆盖子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java)                       |  Hard  |  低偏中  |
 
 ### 动态规划
 
