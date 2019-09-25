@@ -77,7 +77,7 @@ public class Test78 {
 		for (int i = 0;i<setSize;i++){
 			List<Integer> item = new ArrayList<>();
 			for(int j=0;j<nums.length;j++){
-				if((i&(1<<j))!=0){
+				if((i&(1<<j))!=0){ //代表选不选第i位
 					item.add(nums[j]);
 				}
 			}
