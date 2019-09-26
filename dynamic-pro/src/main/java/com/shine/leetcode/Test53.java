@@ -1,7 +1,5 @@
 package com.shine.leetcode;
 
-import java.util.Arrays;
-
 /**
  * description:最大子序和
  * 给定一个整数数组 nums ，找到一个具有最大和的连续
@@ -20,11 +18,11 @@ public class Test53 {
 		if (nums.length == 1) return nums[0];
 		int[] dp = new int[nums.length];
 		dp[0] = nums[0];
+		int result = dp[0];
 		for (int i = 1; i < nums.length; i++) {
 			dp[i] = Math.max(dp[i-1]+nums[i],nums[i]);
+			if(dp[i]>result) result=dp[i];
 		}
-		//取出dp中最大的数
-		Arrays.sort(dp);
-		return dp[nums.length-1];
+		return result;
 	}
 }
