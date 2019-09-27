@@ -85,17 +85,25 @@
 | :------: | :----------------------------------------------------------: | :----: | :------: |
 |    20    | [判断是否是有效括号](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test20.java) |  Easy  |    中    |
 |    05    | [求给定字符串的最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test05.java) | Medium |    高    |
-|   449    |                [通过给定字符构造最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test449.java)                |  Easy  |    低    |
-|    49    |                      [字母异位词分组](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test49.java)                      | Medium |    低    |
-|    03    |                      [无重复最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test03.java)                      | Medium |    高    |
-|   187    |                      [重复的DNA序列](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test187.java)                       | Medium |    低    |
-|    76    |                       [最小覆盖子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java)                       |  Hard  |  低偏中  |
+|   449    | [通过给定字符构造最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test449.java) |  Easy  |    低    |
+|    49    | [字母异位词分组](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test49.java) | Medium |    低    |
+|    03    | [无重复最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test03.java) | Medium |    高    |
+|   187    | [重复的DNA序列](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test187.java) | Medium |    低    |
+|    76    | [最小覆盖子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java) |  Hard  |   偏中   |
 
 ### 动态规划
 
-| 题目序号 |                           问题描述                           | 难度 | 出现频次 |
-| :------: | :----------------------------------------------------------: | :--: | :------: |
-|   871    | [最少加油次数](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test871.java) | Hard |    高    |
+| 题目序号 |                           问题描述                           |  难度  | 出现频次 |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|   871    | [最少加油次数](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test871.java) |  Hard  |    高    |
+|    70    |                          [爬楼梯](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test70.java)                          |  Easy  |    中    |
+|   198    |                         [打家劫舍](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test198.java)                         |  Easy  |    低    |
+|    53    |                        [最大字段和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test53.java)                        |  Easy  |    中    |
+|   322    |                          [找零钱](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test322.java)                          | Medium |    中    |
+|   120    |                          [三角形](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test120.java)                          | Medium |    低    |
+|   300    |                      [最长上升子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test300.java)                      | Medium |    中    |
+|    64    |                        [最小路径和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test64.java)                        | Medium |    低    |
+|   174    |                         [地牢游戏](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test174.java)                         |  Hard  |  低偏中  |
 
 ### 复杂数据结构
 
@@ -107,5 +115,5 @@
 
 | 题目序号 |                           问题描述                           | 难度 | 出现频次 |
 | :------: | :----------------------------------------------------------: | :--: | :------: |
-|    04    | [两个有序集合求中位数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test04.java) | Hard |    中    |
+|    04    | [两个有序集合求中位数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test04.java) | Hard |   偏高   |
 
