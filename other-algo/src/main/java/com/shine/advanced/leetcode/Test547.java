@@ -48,4 +48,52 @@ public class Test547 {
 			}
 		}
 	}
+
+
+	private int[] id;
+	private int[] size;
+	private int count;
+
+	private void union(int p,int q){
+		int i = find(p);
+		int j = find(q);
+		if(i==j) return;
+		if(size[i]<size[j]){ // i的size小于j时，将i合并到j
+			id[i] = j;
+			size[j]+=size[i];
+		}else{
+			id[j] = i;
+			size[i]+=size[j];
+		}
+		count--;
+	}
+
+	private int find(int p){
+		while (p!=id[p]){
+			id[p] =id[id[p]]; // 指向父节点的父节点
+			 p = id[p];
+		}
+		return p;
+	}
+	/**
+	 * 使用并查集实现
+	 * @param M
+	 * @return
+	 */
+	public int findCircleNum02(int[][] M) {
+
+		for (int i = 0; i < M.length; i++) {
+			id[i] = i;
+			size[i] = 1;
+		}
+		count = M.length;
+		for (int i = 0; i < M.length; i++) {
+			for (int j = i+1; j < M.length; j++) {
+				if(M[i][j] == 1){
+					union(i,j);
+				}
+			}
+		}
+		return count;
+	}
 }
