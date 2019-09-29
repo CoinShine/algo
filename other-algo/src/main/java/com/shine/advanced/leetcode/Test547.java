@@ -30,21 +30,21 @@ public class Test547 {
 	 * @return
 	 */
 	public int findCircleNum(int[][] M) {
-		int[] visit = new int[M.length];
+		int[] visit = new int[M.length]; // 设置节点个数
 		int count = 0;
 		for (int i = 0; i < M.length; i++) {
-			if(visit[i]==0){
+			if(visit[i]==0){ // 如果没有访问过 深搜
 				DFS_Graph(i,M,visit);
-				count++;
+				count++; //搜索完成++
 			}
 		}
 		return count;
 	}
 	private void DFS_Graph(int i,int[][] M,int[] visit){
-		visit[i] = 1;
+		visit[i] = 1; // 深搜时标记为1
 		for (int j = 0; j < M[i].length; j++) {
-			if(visit[j] == 0 && M[i][j] == 1){
-				DFS_Graph(j,M,visit);
+			if(visit[j] == 0 && M[i][j] == 1){ // 相邻且没有访问过
+				DFS_Graph(j,M,visit); // 继续深搜
 			}
 		}
 	}
