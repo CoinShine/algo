@@ -81,12 +81,13 @@ public class Test547 {
 	 * @return
 	 */
 	public int findCircleNum02(int[][] M) {
-
+		count = M.length;
+		id = new int[count];
+		size = new int[count];
 		for (int i = 0; i < M.length; i++) {
 			id[i] = i;
 			size[i] = 1;
 		}
-		count = M.length;
 		for (int i = 0; i < M.length; i++) {
 			for (int j = i+1; j < M.length; j++) {
 				if(M[i][j] == 1){
