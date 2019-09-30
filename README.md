@@ -105,11 +105,14 @@
 |    64    |                        [最小路径和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test64.java)                        | Medium |    低    |
 |   174    |                         [地牢游戏](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test174.java)                         |  Hard  |  低偏中  |
 
-### 复杂数据结构
+### 高级数据结构
 
-| 题目序号 | 问题描述 | 难度 | 出现频次 |
-| :------: | :------: | :--: | :------: |
-|          |          |      |          |
+| 题目序号 |      问题描述      | 难度 | 出现频次 |
+| :------: | :----------------: | :--: | :------: |
+|   208    |   [实现Trie树](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test208.java)   |  中  |  低偏中  |
+|   211    | [添加和查找单词](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test211.java) |  中  |    低    |
+|   547    |   [朋友圈个数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test547.java)   |  中  |  低偏中  |
+|   307    |   [区域和查询](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test307.java)   |  中  |  低偏中  |
 
 ### 其他
 
