@@ -1,12 +1,12 @@
-package com.shine.array.geektime;
+package com.shine.geektime;
 
 import org.junit.Test;
 
 /**
- * DESCRIPTION:基础二分查找
- *
- * @author coins
- * @create 2019-04-21 16:55
+ * description: 基础二分查找
+ * @author shine
+ * @date 2019/10/8 10:12
+ * @version 1.0
  */
 public class BinarySearchBash {
 
