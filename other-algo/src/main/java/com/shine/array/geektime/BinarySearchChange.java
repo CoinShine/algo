@@ -3,10 +3,10 @@ package com.shine.array.geektime;
 import org.junit.Test;
 
 /**
- * DESCRIPTION:二分查找变形
- *
- * @author Coins
- * @create 2019-04-25 10:19
+ * description: 二分查找变形
+ * @author shine
+ * @date 2019/10/8 10:31
+ * @version 1.0
  */
 public class BinarySearchChange {
 	/**

@@ -3,12 +3,12 @@ package com.shine.array.geektime;
 import org.junit.Test;
 
 /**
- * DESCRIPTION:基础二分查找
- *
- * @author coins
- * @create 2019-04-21 16:55
+ * description: 基础二分查找
+ * @author shine
+ * @date 2019/10/8 10:31
+ * @version 1.0
  */
-public class BinarySearchBash {
+public class BinarySearchBase {
 
 	/**
 	 * 查找第一个等于给定值得元素
