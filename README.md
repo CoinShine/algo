@@ -75,9 +75,10 @@
 
 ### 排序 
 
-| 题目序号 | 问题描述 | 难度 | 出现频次 |
-| :------: | :------: | :--: | :------: |
-|          |          |      |          |
+| 题目序号  |   问题描述   |  难度  | 出现频次 |
+| :-------: | :----------: | :----: | :------: |
+| MergeSort | [归并排序](https://github.com/CoinShine/algo/blob/master/sort/src/main/java/com/shine/geektime/MergeSort.java) | Medium |          |
+| QuickSort |   [快排](https://github.com/CoinShine/algo/blob/master/sort/src/main/java/com/shine/geektime/QuickSort.java)   | Medium |          |
 
 ### 哈希表、字符串
 
@@ -116,7 +117,12 @@
 
 ### 其他
 
-| 题目序号 |                           问题描述                           | 难度 | 出现频次 |
-| :------: | :----------------------------------------------------------: | :--: | :------: |
-|    04    | [两个有序集合求中位数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test04.java) | Hard |   偏高   |
+|      题目序号      |                           问题描述                           |  难度  | 出现频次 |
+| :----------------: | :----------------------------------------------------------: | :----: | :------: |
+|         04         | [两个有序集合求中位数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test04.java) |  Hard  |   偏高   |
+|        263         |                   [判断一个数是否为丑数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/leetcode/Test263.java)                   |  Easy  |          |
+|        264         |                       [求第K个丑数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/leetcode/Test264.java)                        | Medium |          |
+|  BinarySearchBase  | [基础二分查找](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchBase.java ) |  Easy  |          |
+| BinarySearchChange |                       [二分查找变形](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchChange.java)                       | Medium |          |
+|       BitMap       | [在40亿数中查找数是否存在](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/BitMap.java) |  Hard  |          |
 
