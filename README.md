@@ -24,6 +24,8 @@
 |   946    | [验证出栈序列合法性](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test946.java) | Medium |    低    |
 |   215    | [数组中第K大的数](https://github.com/CoinShine/algo/blob/master/heap/src/main/java/com/shine/leetcode/Test215.java) |  Easy  |    中    |
 |   295    | [查找中位数](https://github.com/CoinShine/algo/blob/master/heap/src/main/java/com/shine/leetcode/Test295.java) |  Hard  |    低    |
+|   239    | [ 滑动窗口最大值](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test239.java) |  Hard  |    低    |
+|   703    | [ 数据流中的第K大元素](https://github.com/CoinShine/algo/blob/master/heap/src/main/java/com/shine/leetcode/Test703.java) |  Easy  |    中    |
 
 ### 贪心算法
 
