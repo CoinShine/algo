@@ -12,7 +12,7 @@ import org.junit.Test;
  * @date 2019/9/22 17:42
  * @version 1.0
  */
-public class Test449 {
+public class Test409 {
 	public int longestPalindrome(String s) {
 		int[] charSet = new int[128]; //字符哈希,将字符转成ascii码表
 		int maxLen = 0; //回文串偶数部分最大长度
