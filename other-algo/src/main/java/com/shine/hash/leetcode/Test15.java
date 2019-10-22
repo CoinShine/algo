@@ -4,10 +4,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -35,23 +33,26 @@ import java.util.Set;
 public class Test15 {
 	public List<List<Integer>> threeSum(int[] nums) {
 		Set<List<Integer>> re = new HashSet<>();
-		Arrays.sort(nums); // 排序后可以去除重复的序列
+		Arrays.sort(nums); // 排序后可以方便去除重复的序列
 		int length = nums.length;
-		Map<Integer,Integer> map = new HashMap<>();
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < length-1; i++) {
 			int a = nums[i];
+			if(i>1&&nums[i]==nums[i-1]){
+				 continue;
+			}
+			Set<Integer> set = new HashSet<>();
 			for (int j = i+1; j < length; j++) {
 				int b = nums[j];
-				int c = -a-b;
-				if(map.containsValue(c)){
+				if(!set.contains(b)){
+					set.add(-a-b);
+				}else{
 					List<Integer> list = new ArrayList<>();
 					list.add(a);
 					list.add(b);
-					list.add(c);
+					list.add(-a-b);
 					re.add(list);
 				}
 			}
-			map.put(i,a);
 		}
 		return new ArrayList<>(re);
 	}
@@ -66,7 +67,10 @@ public class Test15 {
 		Set<List<Integer>> re = new HashSet<>();
 		Arrays.sort(nums);
 		int length = nums.length;
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < length-2; i++) {
+			if(i>1&&nums[i]==nums[i-1]){ // 去重
+				continue;
+			}
 			int a = nums[i];
 			int m=i+1, n = length-1;
 			while (m < n){
@@ -81,6 +85,7 @@ public class Test15 {
 					list.add(nums[n]);
 					re.add(list);
 					m++;
+					n--;
 				}
 			}
 
@@ -90,7 +95,7 @@ public class Test15 {
 
 	@Test
 	public void test01(){
-		int[] nums ={-2,0,1,1,2};
+		int[] nums ={-1,0,1,2,-1,-4};
 		List<List<Integer>> lists = threeSum(nums);
 		System.out.println(lists.toString());
 	}
