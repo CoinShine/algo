@@ -111,12 +111,12 @@
 
 ### 高级数据结构
 
-| 题目序号 |      问题描述      | 难度 | 出现频次 |
-| :------: | :----------------: | :--: | :------: |
-|   208    |   [实现Trie树](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test208.java)   |  中  |  低偏中  |
-|   211    | [添加和查找单词](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test211.java) |  中  |    低    |
-|   547    |   [朋友圈个数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test547.java)   |  中  |  低偏中  |
-|   307    |   [区域和查询](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test307.java)   |  中  |  低偏中  |
+| 题目序号 |                           问题描述                           |  难度  | 出现频次 |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+ |    208    | [实现Trie树](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test208.java)   |  Medium  |  低偏中  |
+|   211    | [添加和查找单词](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test211.java) |  Medium  |    低    |
+|   547    | [朋友圈个数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test547.java)   |  Medium  |  低偏中  |
+|    307      | [区域和查询](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test307.java)   |  Medium  |  低偏中  |
 
 ### 其他
 
