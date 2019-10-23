@@ -22,23 +22,25 @@ public class Test50 {
 
 
 	public double myPow2(double x, int n) {
-		if(n<0){
+		long n1 = n;
+		if(n1<0){
 			x=1/x;
-			n=-n;
+			n1=-n1;
 		}
-		int pow =1;
-		while(n>0){
-			if((n&1)==1){ // 说明最低位为1
+		double pow =1;
+		while(n1>0){
+			if((n1&1)==1){ // 说明最低位为1
 				pow *=x;
 			}
 			x*=x;
-			n=n>>1;
+			n1=n1>>1;
 		}
 		return pow;
 	}
 	@Test
 	public void test01(){
-		double v = myPow2(2, 8);
+		double v = myPow2(2,
+				-2147483648);
 		System.out.println(v);
 	}
 }
