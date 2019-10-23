@@ -48,6 +48,7 @@
 |    22    | [生成合法括号](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test22.java) | Medium |    中    |
 |    51    | [N皇后](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test51.java) |  Hard  |    中    |
 |   315    | [右侧小于当前元素(归并)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test315.java) |  Hard  |    低    |
+|   50    | [求Pow(x, n)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test78.java) |  Medium  |    低    |
 
 ### 树、图
 
