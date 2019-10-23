@@ -95,6 +95,9 @@
 |    03    | [无重复最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test03.java) | Medium |    高    |
 |   187    | [重复的DNA序列](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test187.java) | Medium |    低    |
 |    76    | [最小覆盖子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java) |  Hard  |   偏中   |
+| 01 | 两数相加 | Easy | 高 |
+| 15 | 三数相加(须分析答案) | Medium | 中 |
+| 43 | 字符串相乘 | Medium | 中 |
 
 ### 动态规划
 
@@ -114,7 +117,7 @@
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
 | :------: | :----------------------------------------------------------: | :----: | :------: |
- |    208    | [实现Trie树](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test208.java)   |  Medium  |  低偏中  |
+|    208    | [实现Trie树](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test208.java)   |  Medium  |  低偏中  |
 |   211    | [添加和查找单词](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test211.java) |  Medium  |    低    |
 |   547    | [朋友圈个数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test547.java)   |  Medium  |  低偏中  |
 |    307      | [区域和查询](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test307.java)   |  Medium  |  低偏中  |
