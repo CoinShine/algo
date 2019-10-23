@@ -8,7 +8,9 @@ import java.util.List;
 /**
  * DESCRIPTION:二叉树最近公共祖先
  * 两个结果 x和y的最近公共祖先z，满足在树上离根最远，并且x和y都是z的子孙
- * 即求x节点路径和y节点路径中最后一个相同节点
+ *
+ * 分析：方法一  即求x节点路径和y节点路径中最后一个相同节点 查找路径需要多次遍历 时间复杂度为O(N),但是效率稍微低一些
+ * 		方法二  使用递归的方式 递归查找左右子树 P或Q是否存在 如果存在则返回
  *
  * @author Shine
  * @create 2019/9/17 11:11
@@ -61,6 +63,13 @@ public class Test236 {
 		preOrder(root.left,search,path,result);
 		preOrder(root.right,search,path,result);
 		path.remove(path.size()-1);
+	}
+
+	public TreeNode lowestCommonAncestor2(TreeNode root, TreeNode p, TreeNode q) {
+		if(root == null || root == p||root == q) return root;
+		TreeNode left = lowestCommonAncestor(root.left, p, q); // 遍历左子树
+		TreeNode right = lowestCommonAncestor(root.right, p, q); //遍历右子树
+		return left==null?right : right==null?left:root;
 	}
 
 	@Test
