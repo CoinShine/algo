@@ -97,9 +97,9 @@
 |    03    | [无重复最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test03.java) | Medium |    高    |
 |   187    | [重复的DNA序列](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test187.java) | Medium |    低    |
 |    76    | [最小覆盖子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java) |  Hard  |   偏中   |
-| 01 | 两数相加 | Easy | 高 |
-| 15 | 三数相加(须分析答案) | Medium | 中 |
-| 43 | 字符串相乘 | Medium | 中 |
+|    01    | [两数相加](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test01.java) | Easy | 高 |
+|    15    | [三数相加(须分析答案)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test15.java) | Medium | 中 |
+|    43    | [字符串相乘](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Medium | 中 |
 
 ### 动态规划
 
