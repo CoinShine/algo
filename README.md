@@ -101,6 +101,15 @@
 |    15    | [三数相加(须分析答案)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test15.java) | Medium | 中 |
 |    43    | [字符串相乘](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Medium | 中 |
 
+### 数组
+
+| 题目序号 | 问题描述 | 难度 | 出现频次 |
+| :------: | :------: | :--: | :------: |
+|   169    |  [求众数]()  | Easy |    低    |
+|          |          |      |          |
+
+
+
 ### 动态规划
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
@@ -134,4 +143,3 @@
 |          | [基础二分查找](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchBase.java ) |  Easy  |          |
 |          | [二分查找变形](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchChange.java) | Medium |          |
 |          | [在40亿数中查找数是否存在](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/BitMap.java) |  Hard  |          |
-
