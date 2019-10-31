@@ -62,6 +62,7 @@
 |   199    | [二叉树右视图](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test199.java) | Medium |    中    |
 |   207    | [课程安排(图)](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test207.java) | Medium |    低    |
 |   98    | [验证二叉搜索树](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test98.java) | Medium |    低    |
+| 102 | [二叉树的层次遍历（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test102.java) | Medium | 中 |
 
 ### 搜索、查找 
 
