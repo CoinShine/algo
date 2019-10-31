@@ -5,6 +5,7 @@ import org.junit.Test;
 /**
  * description:Pow(x, n)
  * 递归分治法
+ * 分析：分为递归法和非递归法，面试中推荐使用非递归的方法
  * @author shine
  * @date 2019-10-23 22:35
  * @version 1.0
