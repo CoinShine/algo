@@ -22,7 +22,7 @@ public class Test187 {
 		for (int i = 0; i < length; i++) {
 			int end = Math.min(i + 10, length);
 			String word = s.substring(i, end);
-			wordMap.merge(word, 1, Integer::sum);
+			wordMap.merge(word, 1, Integer::sum); // 为空时put value为1，不为空时value加1
 		}
 		for (Map.Entry<String, Integer> entry : wordMap.entrySet())
 			if(entry.getValue()>1) re.add(entry.getKey());

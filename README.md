@@ -93,13 +93,22 @@
 |    05    | [求给定字符串的最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test05.java) | Medium |    高    |
 |   409    | [通过给定字符构造最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test409.java) |  Easy  |    低    |
 |    49    | [字母异位词分组](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test49.java) | Medium |    低    |
-|    242    | [有效的字母异位词](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test242.java) | Easy |    低    |
+|    242   | [有效的字母异位词](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test242.java) | Easy |    低    |
 |    03    | [无重复最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test03.java) | Medium |    高    |
 |   187    | [重复的DNA序列](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test187.java) | Medium |    低    |
 |    76    | [最小覆盖子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java) |  Hard  |   偏中   |
-| 01 | 两数相加 | Easy | 高 |
-| 15 | 三数相加(须分析答案) | Medium | 中 |
-| 43 | 字符串相乘 | Medium | 中 |
+|    01    | [两数相加](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test01.java) | Easy | 高 |
+|    15    | [三数相加(须分析答案)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test15.java) | Medium | 中 |
+|    43    | [字符串相乘](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Medium | 中 |
+
+### 数组
+
+| 题目序号 | 问题描述 | 难度 | 出现频次 |
+| :------: | :------: | :--: | :------: |
+|   169    |  [求众数]()  | Easy |    低    |
+|          |          |      |          |
+
+
 
 ### 动态规划
 
@@ -134,4 +143,3 @@
 |          | [基础二分查找](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchBase.java ) |  Easy  |          |
 |          | [二分查找变形](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchChange.java) | Medium |          |
 |          | [在40亿数中查找数是否存在](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/BitMap.java) |  Hard  |          |
-
