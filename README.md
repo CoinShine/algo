@@ -103,12 +103,10 @@
 
 ### 数组
 
-| 题目序号 | 问题描述 | 难度 | 出现频次 |
-| :------: | :------: | :--: | :------: |
-|   169    |  [求众数]()  | Easy |    低    |
-|          |          |      |          |
-
-
+| 题目序号 |                           问题描述                           |  难度  | 出现频次 |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|   169    |  [求众数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test169.java)  | Easy |    低    |
+|    123   |     [股票问题（六道）](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test123.java)     |  Hard| 中          |
 
 ### 动态规划
 
