@@ -1,5 +1,7 @@
 package com.shine.leetcode;
 
+import com.shine.pojo.TreeNode;
+
 /**
  * description: 求二叉查找树最近公共祖先
  * 详见236
