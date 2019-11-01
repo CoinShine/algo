@@ -3,7 +3,9 @@ package com.shine.other.leetcode;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * DESCRIPTION:N皇后问题
@@ -108,7 +110,62 @@ public class Test51 {
 
 	@Test
 	public void test01() {
-		List<List<String>> lists = solveNQueens(5);
+		List<List<String>> lists = solveNQueens2(4);
 		System.out.println(lists.size());
+	}
+
+
+
+	List<List<Integer>> result = new ArrayList<>();
+	Set<Integer> cols = new HashSet<>();
+	Set<Integer> pie = new HashSet<>();
+	Set<Integer> na = new HashSet<>();
+	public List<List<String>> solveNQueens2(int n) {
+		if(n<1) return new ArrayList<>();
+		DFS(n,0,new ArrayList<>());
+		return generate_result(n);
+	}
+
+	public void DFS(int n,int row, List<Integer> curr_state){
+		// 递归终止条件
+		if(row>=n){
+			result.add(new ArrayList<>(curr_state));
+			return;
+		}
+		for (int col = 0; col < n; col++) {
+			if(cols.contains(col) || pie.contains(row+col) || na.contains(row-col)){
+				continue;
+			}
+			cols.add(col);
+			pie.add(row+col);
+			na.add(row-col);
+			curr_state.add(col);
+			DFS(n,row+1,curr_state);
+			// 回溯
+			cols.remove(col);
+			pie.remove(row+col);
+			na.remove(row-col);
+			curr_state.remove(curr_state.size()-1);
+		}
+	}
+
+	public List<List<String>> generate_result(int n){
+		List<List<String>> re = new ArrayList<>();
+		for (List<Integer> list : result) {
+			List<String> element = new ArrayList<>();
+			for (Integer i : list) {
+				StringBuilder s = new StringBuilder();
+				for (int j = 0; j < i; j++) {
+					s.append(".");
+				}
+				s.append("Q");
+				for (int j = 0; j < n-i-1; j++) {
+					s.append(".");
+				}
+				element.add(s.toString());
+			}
+			re.add(element);
+		}
+		return re;
 	}
 }

@@ -80,6 +80,7 @@
 |   126    | [单词接龙2(记录路径的广搜、图、哈希表)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test126.java) |  Hard  |    低    |
 |   473    |   [火柴棍摆正方形(回溯深搜、位运算)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test473.java)    | Medium |    低    |
 |   407    | [收集雨水2(堆、带优先级的广度优先搜索)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test407.java) |  Hard  |   偏高   |
+|   37    | [求数独(DFS)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test37.java) |  Hard  |   偏高   |
 
 ### 排序 
 

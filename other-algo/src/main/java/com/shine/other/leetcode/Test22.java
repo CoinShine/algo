@@ -8,7 +8,8 @@ import java.util.List;
 /**
  * description: 生成括号 使用递归
  * 当前可以放置左括号的数量，当前可以放置右边括号的数量
- *
+ * 进行剪枝处理，增加判断规则  将时间复杂度从O(2^2N) 变为O(2^N)
+ * （也可以当做是DFS范畴）
  * @author shine
  * @version 1.0
  * @date 9/12/2019 6:14 PM
@@ -36,6 +37,7 @@ public class Test22 {
 
 	@Test
 	public void test01(){
-		generateParenthesis(2);
+		List<String> list = generateParenthesis(2);
+		System.out.println(list.toString());
 	}
 }
