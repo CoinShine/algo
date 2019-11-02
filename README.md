@@ -48,7 +48,7 @@
 |    22    | [生成合法括号](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test22.java) | Medium |    中    |
 |    51    | [N皇后](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test51.java) |  Hard  |    中    |
 |   315    | [右侧小于当前元素(归并)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test315.java) |  Hard  |    低    |
-|   50    | [求Pow(x, n)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test78.java) |  Medium  |    低    |
+|    50    | [求Pow(x, n)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test78.java) |  Medium  |    低    |
 
 ### 树、图
 
@@ -61,10 +61,10 @@
 |   114    | [二叉树展开为链表](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test114.java) | Medium |    中    |
 |   199    | [二叉树右视图](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test199.java) | Medium |    中    |
 |   207    | [课程安排(图)](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test207.java) | Medium |    低    |
-|   98    | [验证二叉搜索树](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test98.java) | Medium |    低    |
-| 102 | [二叉树的层次遍历（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test102.java) | Medium | 中 |
-| 104 | [二叉树的最大深度（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test104.java) | Easy | 低 |
-| 111 | [二叉树的最小深度（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test111.java) | Easy | 低 |
+|    98    | [验证二叉搜索树](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test98.java) | Medium |    低    |
+|   102    | [二叉树的层次遍历（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test102.java) | Medium | 中 |
+|   104    | [二叉树的最大深度（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test104.java) | Easy | 低 |
+|   111    | [二叉树的最小深度（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test111.java) | Easy | 低 |
 
 ### 搜索、查找 
 
@@ -80,7 +80,7 @@
 |   126    | [单词接龙2(记录路径的广搜、图、哈希表)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test126.java) |  Hard  |    低    |
 |   473    |   [火柴棍摆正方形(回溯深搜、位运算)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test473.java)    | Medium |    低    |
 |   407    | [收集雨水2(堆、带优先级的广度优先搜索)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test407.java) |  Hard  |   偏高   |
-|   37    | [求数独(DFS)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test37.java) |  Hard  |   偏高   |
+|    37    | [求数独(DFS)](https://github.com/CoinShine/algo/blob/master/search/src/main/java/com/shine/leetcode/Test37.java) |  Hard  |   偏高   |
 
 ### 排序 
 
@@ -130,10 +130,11 @@
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
 | :------: | :----------------------------------------------------------: | :----: | :------: |
-|    208    | [实现Trie树](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test208.java)   |  Medium  |  低偏中  |
-|   211    | [添加和查找单词](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test211.java) |  Medium  |    低    |
-|   547    | [朋友圈个数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test547.java)   |  Medium  |  低偏中  |
-|    307      | [区域和查询](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test307.java)   |  Medium  |  低偏中  |
+|   208    | [实现Trie树](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test208.java)   |  Medium  |  低偏中  |
+|   211    | [添加和查找单词(字典树)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test211.java) |  Medium  |    低    |
+|   212    | [搜索单词II(字典树)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test212.java)   |  Hard  |  低偏中  |
+|   547    | [朋友圈个数(并查集)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test547.java)   |  Medium  |  低偏中  |
+|   307    | [区域和查询(线段树)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/advanced/leetcode/Test307.java)   |  Medium  |  低偏中  |
 
 ### 其他
 
@@ -145,3 +146,4 @@
 |          | [基础二分查找](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchBase.java ) |  Easy  |          |
 |          | [二分查找变形](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchChange.java) | Medium |          |
 |          | [在40亿数中查找数是否存在](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/BitMap.java) |  Hard  |          |
+|    69    | [求平方根](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test69.java) |  Easy  |     低     |
