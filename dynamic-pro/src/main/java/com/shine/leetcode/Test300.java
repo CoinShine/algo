@@ -39,14 +39,15 @@ public class Test300 {
 		int LIS = 1; // 初始化最长子序列的长度为1
 		for (int i=1;i<nums.length;i++){
 			for (int j=0;j<i;j++){
-				if(nums[i]>nums[j] && dp[j]+1>dp[i]){
-					dp[i] = dp[j]+1;
+				if(nums[i]>nums[j]){
+					dp[i] = Math.max(dp[i],dp[j]+1);
 				}
 			}
 			dp[i] = dp[i] == 0 ? 1 : dp[i]; // 如果不是上升序列则记为1
 			if (dp[i] > LIS) {
 				LIS = dp[i]; // 记录最长的序列
 			}
+			LIS = Math.max(LIS,dp[i]);
 		}
 		return LIS;
 	}
@@ -126,6 +127,6 @@ public class Test300 {
 	public void test01(){
 		//int[] nums = {1,3,2,3,1,4};
 		int[] nums = {4,10,4,3,8,9};
-		System.out.println(lengthOfLIS03(nums));
+		System.out.println(lengthOfLIS(nums));
 	}
 }

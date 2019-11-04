@@ -110,21 +110,22 @@
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
 | :------: | :----------------------------------------------------------: | :----: | :------: |
 |   169    |  [求众数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test169.java)  | Easy |    低    |
-|    123   |     [股票问题（六道）](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test123.java)     |  Hard| 中          |
 
 ### 动态规划
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
 | :------: | :----------------------------------------------------------: | :----: | :------: |
-|   871    | [最少加油次数](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test871.java) |  Hard  |    高    |
-|    70    |                          [爬楼梯](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test70.java)                          |  Easy  |    中    |
-|   198    |                         [打家劫舍](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test198.java)                         |  Easy  |    低    |
-|    53    |                        [最大字段和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test53.java)                        |  Easy  |    中    |
-|   322    |                          [找零钱](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test322.java)                          | Medium |    中    |
-|   120    |                          [三角形](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test120.java)                          | Medium |    低    |
-|   300    |                      [最长上升子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test300.java)                      | Medium |    中    |
-|    64    |                        [最小路径和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test64.java)                        | Medium |    低    |
-|   174    |                         [地牢游戏](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test174.java)                         |  Hard  |  低偏中  |
+|   871    | [最少加油次数](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test871.java)                     |  Hard  |    高    |
+|    70    | [爬楼梯](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test70.java)                          |  Easy  |    中    |
+|   198    | [打家劫舍](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test198.java)                         |  Easy  |    低    |
+|    53    | [最大字段和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test53.java)                        |  Easy  |    中    |
+|   322    | [找零钱](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test322.java)                          | Medium |    中    |
+|   120    | [三角形](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test120.java)                          | Medium |    低    |
+|   300    | [最长上升子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test300.java)                      | Medium |    中    |
+|    64    | [最小路径和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test64.java)                        | Medium |    低    |
+|   174    | [地牢游戏](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test174.java)                         |  Hard  |  低偏中  |
+|   152    | [最长乘积子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test152.java)                    |  Medium  |  中  |
+|   123    | [股票问题（六道）](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test123.java)           |  Hard| 中          |
 
 ### 高级数据结构
 
@@ -147,3 +148,4 @@
 |          | [二分查找变形](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchChange.java) | Medium |          |
 |          | [在40亿数中查找数是否存在](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/BitMap.java) |  Hard  |          |
 |    69    | [求平方根](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test69.java) |  Easy  |     低     |
+|    52    | [N皇后个数(位运算法)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test52.java) |  Hard  |     低     |
