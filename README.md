@@ -150,3 +150,4 @@
 |          | [在40亿数中查找数是否存在](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/BitMap.java) |  Hard  |          |
 |    69    | [求平方根](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test69.java) |  Easy  |     低     |
 |    52    | [N皇后个数(位运算法)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test52.java) |  Hard  |     低     |
+|   146    | [LRU缓存](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test146.java) |  Medium  |     高     |
