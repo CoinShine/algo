@@ -5,13 +5,14 @@
 | :------: | :----------------------------------------------------------: | :----: | :------: |
 |   206    | [链表逆序](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test206.java) |  Easy  |    高    |
 |    92    | [链表逆序2](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test92.java) | Medium |    高    |
+|    24    | [链表两两交换位置](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test24.java) | Medium |    低    |
+|    25    | [K 个一组翻转链表](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test25.java) | Hard |    中    |
 |   160    | [链表求交点](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test160.java) |  Easy  |    低    |
 |   142    | [链表求环交点](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test142.java) | Medium |    低    |
 |    86    | [分割链表](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test86.java) | Medium |    低    |
 |   138    | [链表深度复制](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test138.java) |  Hard  |    低    |
 |    21    | [2个排序链表合并](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test21.java) |  Easy  |    中    |
 |    23    | [K个排序链表合并](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test23.java) |  Hard  |    中    |
-|    24    | [两两交换位置](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test24.java) | Medium |    低    |
 
 ### 栈、队列、堆 
 
