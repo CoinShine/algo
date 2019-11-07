@@ -20,8 +20,12 @@
 | :------: | :----------------------------------------------------------: | :----: | :------: |
 |   225    | [队列实现栈](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test225.java) |  Easy  |    低    |
 |   232    | [栈实现队列](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test232.java) |  Easy  |    低    |
+|    20    | [判断是否是有效括号](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test20.java) |  Easy  |    中    |
+|   739    | [每日温度](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test739.java) |  Medium  |    偏中    |
+|   84    | [每日温度](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test84.java) |  Hard  |    偏中    |
 |   155    | [最小栈](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test155.java) |  Easy  |    低    |
-|   224    | [简单计算器](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test224.java) |  Hard  |    中    |
+|   224    | [简单计算器(224、227、772、770)](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test224.java) |  Hard  |    中    |
+|    84    | [柱状图中最大的矩形](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test84.java) |  Hard  |    中    |
 |   946    | [验证出栈序列合法性](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test946.java) | Medium |    低    |
 |   215    | [数组中第K大的数](https://github.com/CoinShine/algo/blob/master/heap/src/main/java/com/shine/leetcode/Test215.java) |  Easy  |    中    |
 |   295    | [查找中位数](https://github.com/CoinShine/algo/blob/master/heap/src/main/java/com/shine/leetcode/Test295.java) |  Hard  |    低    |
@@ -94,7 +98,6 @@
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
 | :------: | :----------------------------------------------------------: | :----: | :------: |
-|    20    | [判断是否是有效括号](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test20.java) |  Easy  |    中    |
 |    05    | [求给定字符串的最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test05.java) | Medium |    高    |
 |   409    | [通过给定字符构造最长回文串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test409.java) |  Easy  |    低    |
 |    49    | [字母异位词分组](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test49.java) | Medium |    低    |
@@ -126,7 +129,7 @@
 |    64    | [最小路径和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test64.java)                        | Medium |    低    |
 |   174    | [地牢游戏](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test174.java)                         |  Hard  |  低偏中  |
 |   152    | [最长乘积子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test152.java)                    |  Medium  |  中  |
-|   123    | [股票问题（六道）](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test123.java)           |  Hard| 中          |
+|   123    | [股票问题(121,122,123,188,309,714)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test123.java)           |  Hard| 中          |
 |    72    | [编辑距离](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test72.java)           |  Hard| 高          |
 
 ### 高级数据结构
