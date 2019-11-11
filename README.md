@@ -70,6 +70,8 @@
 |   102    | [二叉树的层次遍历（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test102.java) | Medium |    中    |
 |   104    | [二叉树的最大深度（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test104.java) |  Easy  |    低    |
 |   111    | [二叉树的最小深度（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test111.java) |  Easy  |    低    |
+|   250    | [统计同值子树（DFS）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test250.java) |  Medium  |    很低    |
+|   230    | [二叉搜索树中第K小的元素](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test230.java) |  Medium  |    低    |
 
 ### 搜索、查找 
 
@@ -113,7 +115,7 @@
 
 | 题目序号 |                           问题描述                           | 难度 | 出现频次 |
 | :------: | :----------------------------------------------------------: | :--: | :------: |
-|   169    | [求众数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test169.java) | Easy |    低    |
+|   169    | [求众数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test169.java) | Easy | 低 |
 
 ### 动态规划
 
@@ -180,4 +182,3 @@
 |   958    |  二叉树的完全性检验   | Medium |      |
 |   386    |      字典序排数       | Medium |      |
 |   546    |       移除盒子        |  Hard  |      |
-
