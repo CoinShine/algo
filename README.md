@@ -7,6 +7,7 @@
 |    92    | [链表逆序2](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test92.java) | Medium |    高    |
 |    24    | [链表两两交换位置](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test24.java) | Medium |    低    |
 |    25    | [K 个一组翻转链表](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test25.java) |  Hard  |    中    |
+|   147    | [对链表进行插入排序](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test147.java) |  Medium  |    中    |
 |   160    | [链表求交点](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test160.java) |  Easy  |    低    |
 |   142    | [链表求环交点](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test142.java) | Medium |    低    |
 |    86    | [分割链表](https://github.com/CoinShine/algo/blob/master/linked-list/src/main/java/com/shine/leetcode/Test86.java) | Medium |    低    |
@@ -22,7 +23,6 @@
 |   232    | [栈实现队列](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test232.java) |  Easy  |    低    |
 |    20    | [判断是否是有效括号](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test20.java) |  Easy  |    中    |
 |   739    | [每日温度](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test739.java) | Medium |   偏中   |
-|    84    | [每日温度](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test84.java) |  Hard  |   偏中   |
 |   155    | [最小栈](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test155.java) |  Easy  |    低    |
 |   224    | [简单计算器(224、227、772、770)](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test224.java) |  Hard  |    中    |
 |    84    | [柱状图中最大的矩形](https://github.com/CoinShine/algo/blob/master/stack-queue/src/main/java/com/shine/leetcode/Test84.java) |  Hard  |    中    |
@@ -95,6 +95,8 @@
 | :------: | :----------------------------------------------------------: | :----: | :------: |
 |          | [归并排序](https://github.com/CoinShine/algo/blob/master/sort/src/main/java/com/shine/geektime/MergeSort.java) | Medium |          |
 |          | [快排](https://github.com/CoinShine/algo/blob/master/sort/src/main/java/com/shine/geektime/QuickSort.java) | Medium |          |
+|          | [冒泡](https://github.com/CoinShine/algo/blob/master/sort/src/main/java/com/shine/geektime/BubbleSort.java) | Easy |          |
+|          | [插入](https://github.com/CoinShine/algo/blob/master/sort/src/main/java/com/shine/geektime/InsertionSort.java) | Easy |          |
 
 ### 哈希表、字符串
 
