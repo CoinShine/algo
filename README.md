@@ -121,6 +121,7 @@
 | 题目序号 |                           问题描述                           | 难度 | 出现频次 |
 | :------: | :----------------------------------------------------------: | :--: | :------: |
 |   169    | [求众数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test169.java) | Easy | 低 |
+|          | [未排序数组求K大的数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/FindKth.java) |  |  |
 
 ### 动态规划
 

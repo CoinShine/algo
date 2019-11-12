@@ -20,7 +20,7 @@ public class Test04 {
 	public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
 		int n = nums1.length;
 		int m = nums2.length;
-		if(n > m)   //保证数组1一定最短
+		if(n > m)   //保证数组1一定最短，便于计算
 			return findMedianSortedArrays(nums2,nums1);
 		int L1=0,L2=0,R1=0,R2=0,c1,c2,lo = 0, hi = 2*n;  //虚拟加了'#'所以数组1是2*n+1长度，角标为2n
 		while(lo <= hi)
@@ -41,6 +41,62 @@ public class Test04 {
 		}
 
 		return (Math.max(L1,L2)+ Math.min(R1,R2))/2.0;
+	}
+
+
+	/**
+	 * 切分的思想，判断临界点
+	 * 由于要求中位数，即 k = (m+n) / 2，k1 = k / 2，k2 = k / 2，每次都能将一半的数排除，即问题的规模减小一半，
+	 * 因此，算法复杂度就类似二分搜索，复杂度就是 log(k)，即 O(log((m+n) / 2))。
+	 * @param nums1
+	 * @param nums2
+	 * @return
+	 */
+	double findMedianSortedArrays2(int nums1[], int nums2[]) {
+		int m = nums1.length;
+		int n = nums2.length;
+
+		int k = (m + n) / 2;
+
+		if ((m + n) % 2 == 1) {
+			return findKth(nums1, 0, m - 1, nums2, 0, n - 1, k + 1);
+		} else {
+			return (
+					findKth(nums1, 0, m - 1, nums2, 0, n - 1, k) +
+							findKth(nums1, 0, m - 1, nums2, 0, n - 1, k + 1)
+			) / 2.0;
+		}
+	}
+
+	double findKth(int[] nums1, int l1, int h1, int[] nums2, int l2, int h2, int k) {
+		int m = h1 - l1 + 1;
+		int n = h2 - l2 + 1;
+
+		if (m > n) {
+			return findKth(nums2, l2, h2, nums1, l1, h1, k);
+		}
+
+		if (m == 0) {
+			return nums2[l2 + k - 1];
+		}
+
+		if (k == 1) {
+			return Math.min(nums1[l1], nums2[l2]);
+		}
+
+		int na = Math.min(k/2, m);
+		int nb = k - na;
+		int va = nums1[l1 + na - 1];
+		int vb = nums2[l2 + nb - 1];
+
+		if (va == vb) {
+			return va;
+		} else if (va < vb) {
+			return findKth(nums1, l1 + na, h1, nums2, l2, l2 + nb - 1, k - na);
+		} else {
+			return findKth(nums1, l1, l1 + na - 1, nums2, l2 + nb, h2, k - nb);
+		}
+
 	}
 
 
