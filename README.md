@@ -156,6 +156,7 @@
 |    04    | [两个有序集合求中位数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test04.java) |  Hard  |   偏高   |
 |   263    | [判断一个数是否为丑数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/leetcode/Test263.java) |  Easy  |          |
 |   264    | [求第K个丑数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/leetcode/Test264.java) | Medium |          |
+|   365    | [水壶问题](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/leetcode/Test365.java) | Medium |    中    |
 |          | [基础二分查找](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchBase.java ) |  Easy  |          |
 |          | [二分查找变形](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/geektime/BinarySearchChange.java) | Medium |          |
 |          | [在40亿数中查找数是否存在](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/BitMap.java) |  Hard  |          |

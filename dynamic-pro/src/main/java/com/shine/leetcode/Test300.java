@@ -29,6 +29,7 @@ import java.util.List;
 public class Test300 {
 	/**
 	 * 时间复杂度O(n^2)
+	 * 自底向上
 	 * @param nums
 	 * @return
 	 */
