@@ -49,11 +49,14 @@
 | :------: | :----------------------------------------------------------: | :----: | :------: |
 |    78    | [无重复求子集](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test78.java) | Medium |    低    |
 |    90    | [有重复求子集II](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test90.java) | Medium |    低    |
+|    39    | [组合数之和](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test39.java) | Medium |    中    |
 |    40    | [组合数之和II](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test40.java) | Medium |    低    |
 |    22    | [生成合法括号](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test22.java) | Medium |    中    |
 |    51    | [N皇后](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test51.java) |  Hard  |    中    |
 |   315    | [右侧小于当前元素(归并)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test315.java) |  Hard  |    低    |
 |    50    | [求Pow(x, n)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test78.java) | Medium |    低    |
+|    91    | [解码方法(递归)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test91.java) | Medium |   中    |
+|   247    | [中心对称数 II(递归)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test247.java) | Medium |   中    |
 
 ### 树、图
 
