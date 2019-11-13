@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.LinkedList;
 
 /**
- * DESCRIPTION:
+ * DESCRIPTION:课程表
  * 在选修某些课程之前需要一些先修课程。
  * 例如，想要学习课程 0 ，你需要先完成课程 1 ，我们用一个匹配来表示他们: [0,1]
  * 使用邻接表，采用广度优先搜索，根据入度计算
