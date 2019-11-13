@@ -42,6 +42,9 @@
 |    55    | [跳跃游戏](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test55.java) | Medium |    低    |
 |    45    | [跳到末尾最少次数](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test45.java) |  Hard  |    中    |
 |   452    | [最少的弓箭射击气球](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test452.java) | Medium |    中    |
+|    253   | [会议室II](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test253.java) | Medium |    低    |
+|    56    | [合并区间](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test56.java) | Medium |    中    |
+|   435    | [无重叠区间(合并区间变形)](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test56.java) | Medium |    低    |
 
 ### 递归、分治、回溯
 
