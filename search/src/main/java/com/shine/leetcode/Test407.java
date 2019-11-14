@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * description: 收集雨水
+ * description: 收集雨水(417题)
  * 给定一个 m x n 的矩阵，其中的值均为正整数，代表二维高度图每个单元的高度，请计算图中形状最多能接多少体积的雨水。
  * 说明:
  * m 和 n 都是小于110的整数。每一个单位的高度都大于 0 且小于 20000。

@@ -3,7 +3,7 @@ package com.shine.string.leetcode;
 import org.junit.Test;
 
 /**
- * description:正则表达式匹配
+ * description:正则表达式匹配 （44题采用相同的思路，通配符匹配）
  * 给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。
  *
  * '.' 匹配任意单个字符
