@@ -114,11 +114,13 @@
 |    49    | [字母异位词分组](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test49.java) | Medium |    低    |
 |   242    | [有效的字母异位词](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test242.java) |  Easy  |    低    |
 |    03    | [无重复最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test03.java) | Medium |    高    |
+|   340    | [至多包含 K 个不同字符的最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test340.java) | Hard |    低    |
 |   187    | [重复的DNA序列](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test187.java) | Medium |    低    |
 |    76    | [最小覆盖子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java) |  Hard  |   偏中   |
 |    01    | [两数相加](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test01.java) |  Easy  |    高    |
 |    15    | [三数相加(须分析答案)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test15.java) | Medium |    中    |
 |    43    | [字符串相乘](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Medium |    中    |
+|    10    | [正则表达式匹配](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Hard |    中    |
 
 ### 数组
 
