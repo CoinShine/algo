@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * DESCRIPTION:二叉树右视图
+ * DESCRIPTION:二叉树右视图 （考虑下左视图怎么写）
  * 借助队列使用广搜，输入每层最后一个节点
  *
  * @author Shine

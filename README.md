@@ -178,7 +178,7 @@
 
 | 题目序号 |       问题描述        |  难度  | 分类 |
 | :------: | :-------------------: | :----: | :--: |
-|   440    |   字典序的第K小数字   |  Hard  |      |
+|   440    |   [字典序的第K小数字](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test440.java)   |  Hard  |   树   |
 |   952    | 按公因数计算最大组件  |  Hard  |      |
 |   726    |      原子的个数       |  Hard  |      |
 |   135    |       分发糖果        |  Hard  |      |
