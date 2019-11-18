@@ -178,21 +178,21 @@
 
 | 题目序号 |       问题描述        |  难度  | 分类 |
 | :------: | :-------------------: | :----: | :--: |
-|   440    |   [字典序的第K小数字](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test440.java)   |  Hard  |   树   |
-|   952    | 按公因数计算最大组件  |  Hard  |      |
-|   726    |      原子的个数       |  Hard  |      |
-|   135    |       分发糖果        |  Hard  |      |
-|   1012   | 至少有 1 位重复的数字 |  Hard  |      |
-|   460    |        LFU缓存        |  Hard  |      |
-|   317    |  离建筑物最近的距离   |  Hard  |      |
+|   440    |   [字典序的第K小数字](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test440.java)   |  Hard  |   树(十叉树先序遍历)   |
+|   952    | 按公因数计算最大组件  |  Hard  |   图(并查集)  |
+|   726    |      原子的个数       |  Hard  |   递归   |
+|   135    |       分发糖果        |  Hard  |   贪心   |
+|   1012   | 至少有 1 位重复的数字 |  Hard  |   数学或N位DP   |
+|   460    |        LFU缓存        |  Hard  |   双链表+Hash表   |
+|   317    |  离建筑物最近的距离   |  Hard  |  BFS    |
 |   1014   |     最佳观光组合      | Medium |      |
 |   314    |   二叉树的垂直遍历    | Medium |      |
 |   426    | 将二叉树转为双向链表  |  Hard  |      |
 |   834    |     树中距离之和      |  Hard  |      |
-|   670    |       最大交换        | Medium |      |
+|   670    |       最大交换        | Medium |  贪心    |
 |   556    |   下一个更大元素III   | Medium |      |
 |   143    |       重排链表        | Medium |      |
-|   679    |       24 点游戏       |  Hard  |      |
-|   958    |  二叉树的完全性检验   | Medium |      |
-|   386    |      字典序排数       | Medium |      |
-|   546    |       移除盒子        |  Hard  |      |
+|   679    |       24 点游戏       |  Hard  |  回溯    |
+|   958    |  二叉树的完全性检验   | Medium |  BFS    |
+|   386    |      字典序排数       | Medium |  DFS、先序遍历    |
+|   546    |       移除盒子        |  Hard  |  DP    |

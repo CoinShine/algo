@@ -17,6 +17,8 @@ package com.shine.advanced.leetcode;
  * 输出: 2
  * 说明：已知学生0和学生1互为朋友，他们在一个朋友圈。
  * 第2个学生自己在一个朋友圈。所以返回2。
+ *
+ * 并查集实现 结合952题
  * @author shine
  * @date 2019/9/29 18:21
  * @version 1.0
