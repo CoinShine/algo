@@ -145,8 +145,7 @@
 |   174    | [地牢游戏](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test174.java) |  Hard  |  低偏中  |
 |   152    | [最长乘积子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test152.java) | Medium |    中    |
 |   123    | [股票问题(121,122,123,188,309,714)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test123.java) |  Hard  |    中    |
-|    72    | [编辑距离](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test72.java) |  Hard  |    高    |
-
+|    72    | [编辑距离](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test72.java) |  Hard  |    高    
 ### 高级数据结构
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
@@ -176,23 +175,35 @@
 
 #### 字节跳动
 
+| 题目序号 |                           问题描述                           |  难度  |        分类        |
+| :------: | :----------------------------------------------------------: | :----: | :----------------: |
+|   440    | [字典序的第K小数字](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test440.java) |  Hard  | 树(十叉树先序遍历) |
+|   952    | [按公因数计算最大组件](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test952.java) |  Hard  |     图(并查集)     |
+|   726    | [原子的个数](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test726.java) |  Hard  |        递归        |
+|   135    | [分发糖果](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test135.java) |  Hard  |        贪心        |
+|   1012   | [至少有 1 位重复的数字](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test1012.java) |  Hard  |    数学或N位DP     |
+|   460    | [LFU缓存](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test460.java) |  Hard  |   双链表+Hash表    |
+|   317    | [离建筑物最近的距离](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test317.java) |  Hard  |        BFS         |
+|   1014   | [最佳观光组合](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test1014.java) | Medium |                    |
+|   314    | [二叉树的垂直遍历](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test314.java) | Medium |                    |
+|   426    | [将二叉树转为双向链表](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test426.java) |  Hard  |                    |
+|   834    | [树中距离之和](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test834.java) |  Hard  |                    |
+|   670    | [最大交换](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test670.java) | Medium |        贪心        |
+|   556    | [下一个更大元素III](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test556.java) | Medium |                    |
+|   143    | [重排链表](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test143.java) | Medium |      链表              |
+|   679    | [24 点游戏](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test679.java) |  Hard  |        回溯        |
+|   958    | [二叉树的完全性检验](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test958.java) | Medium |        BFS         |
+|   386    | [字典序排数](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test386.java) | Medium |   DFS、先序遍历    |
+|   546    | [移除盒子](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test546.java) |  Hard  |         DP         |
+
+#### 阿里巴巴
+
 | 题目序号 |       问题描述        |  难度  | 分类 |
 | :------: | :-------------------: | :----: | :--: |
-|   440    |   [字典序的第K小数字](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test440.java)   |  Hard  |   树(十叉树先序遍历)   |
-|   952    | 按公因数计算最大组件  |  Hard  |   图(并查集)  |
-|   726    |      原子的个数       |  Hard  |   递归   |
-|   135    |       分发糖果        |  Hard  |   贪心   |
-|   1012   | 至少有 1 位重复的数字 |  Hard  |   数学或N位DP   |
-|   460    |        LFU缓存        |  Hard  |   双链表+Hash表   |
-|   317    |  离建筑物最近的距离   |  Hard  |  BFS    |
-|   1014   |     最佳观光组合      | Medium |      |
-|   314    |   二叉树的垂直遍历    | Medium |      |
-|   426    | 将二叉树转为双向链表  |  Hard  |      |
-|   834    |     树中距离之和      |  Hard  |      |
-|   670    |       最大交换        | Medium |  贪心    |
-|   556    |   下一个更大元素III   | Medium |      |
-|   143    |       重排链表        | Medium |      |
-|   679    |       24 点游戏       |  Hard  |  回溯    |
-|   958    |  二叉树的完全性检验   | Medium |  BFS    |
-|   386    |      字典序排数       | Medium |  DFS、先序遍历    |
-|   546    |       移除盒子        |  Hard  |  DP    |
+|   277    |       搜寻名人        | Medium |   双指针   |
+|   992    | K 个不同整数的子数组  |  Hard  |   滑动窗口   |
+|   540    | 有序数组中的单一元素  | Medium |  二分    |
+|   688    |   马在棋盘上的概率    | Medium |   DP+DFS   |
+|   743    |     网络延迟时间      | Medium |      |
+|   132    |     分割回文串II      |  Hard  |   DP   |
+|   446    | [等差数列划分II-子序列](https://leetcode-cn.com/problems/arithmetic-slices-ii-subsequence/solution/deng-chai-shu-lie-hua-fen-ii-zi-xu-lie-by-leetcode/) |  Hard  |  DP    |
