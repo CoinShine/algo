@@ -198,12 +198,33 @@
 
 #### 阿里巴巴
 
-| 题目序号 |       问题描述        |  难度  | 分类 |
-| :------: | :-------------------: | :----: | :--: |
-|   277    |       搜寻名人        | Medium |   双指针   |
-|   992    | K 个不同整数的子数组  |  Hard  |   滑动窗口   |
-|   540    | 有序数组中的单一元素  | Medium |  二分    |
-|   688    |   马在棋盘上的概率    | Medium |   DP+DFS   |
-|   743    |     网络延迟时间      | Medium |      |
-|   132    |     分割回文串II      |  Hard  |   DP   |
-|   446    | [等差数列划分II-子序列](https://leetcode-cn.com/problems/arithmetic-slices-ii-subsequence/solution/deng-chai-shu-lie-hua-fen-ii-zi-xu-lie-by-leetcode/) |  Hard  |  DP    |
+| 题目序号 |                           问题描述                           |  难度  |   分类   |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|   277    | [搜寻名人](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/ali/Test277.java) | Medium |  双指针  |
+|   992    | [K个不同整数的子数组](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/ali/Test992.java) |  Hard  | 滑动窗口 |
+|   540    | [有序数组中的单一元素](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/ali/Test540.java) | Medium |   二分   |
+|   688    | [马在棋盘上的概率](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/ali/Test688.java) | Medium |  DP+DFS  |
+|   743    | [网络延迟时间](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/ali/Test743.java) | Medium |          |
+|   132    | [分割回文串II](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/ali/Test132.java) |  Hard  |    DP    |
+|   446    | [等差数列划分II-子序列](https://leetcode-cn.com/problems/arithmetic-slices-ii-subsequence/solution/deng-chai-shu-lie-hua-fen-ii-zi-xu-lie-by-leetcode/) |  Hard  |    DP    |
+
+#### 美团
+
+| 题目序号 |                           问题描述                           |  难度  |   分类   |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|   277    | [火星字典](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test269.java) |  Hard  |      |
+|   992    |[最深节点的最小子树](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/meituan/Test865.java) | Medium |      |
+
+#### 滴滴
+
+| 题目序号 |                           问题描述                           |  难度  |   分类   |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|   364    |[加权嵌套序列和II](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/didi/Test364.java) | Medium |      |
+
+#### 快手
+
+| 题目序号 |                           问题描述                           |  难度  |   分类   |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|   468    | [验证IP地址](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/kuaishou/Test468.java) |  Hard  |      |
+|   165    |[比较版本号](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/kuaishou/Test165.java) | Medium |      |
+|   450    |[删除二叉搜索树节点](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/kuaishou/Test450.java) | Medium |      |
