@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * DESCRIPTION:二叉树右视图 （考虑下左视图怎么写）
+ * DESCRIPTION:二叉树右视图
  * 借助队列使用广搜，输入每层最后一个节点
- *
+ * 分析：一般层次遍历使用BFS，时间复杂度为O(N),空间复杂度为O(N)
  * @author Shine
  * @create 2019/9/17 16:59
  */
@@ -18,6 +18,7 @@ public class Test199 {
 	private Queue<TreeNode> nodeQueue = new LinkedList<>(); // 定义队列，存储广搜结果
 	private Queue<Integer> depthQueue = new LinkedList<>(); // 定义广搜每个节点对应的层数
 
+	@SuppressWarnings("ConstantConditions")
 	public List<Integer> rightSideView(TreeNode root) {
 		List<Integer> result = new ArrayList<>();
 		if (root != null) {
