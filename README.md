@@ -145,7 +145,7 @@
 |   174    | [地牢游戏](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test174.java) |  Hard  |  低偏中  |
 |   152    | [最长乘积子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test152.java) | Medium |    中    |
 |   123    | [股票问题(121,122,123,188,309,714)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test123.java) |  Hard  |    中    |
-|    72    | [编辑距离](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test72.java) |  Hard  |    高    
+|    72    | [编辑距离](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test72.java) |  Hard  |    高    | 
 ### 高级数据结构
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
