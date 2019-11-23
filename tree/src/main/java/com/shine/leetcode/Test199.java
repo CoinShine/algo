@@ -15,11 +15,10 @@ import java.util.Queue;
  * @create 2019/9/17 16:59
  */
 public class Test199 {
-	private Queue<TreeNode> nodeQueue = new LinkedList<>(); // 定义队列，存储广搜结果
-	private Queue<Integer> depthQueue = new LinkedList<>(); // 定义广搜每个节点对应的层数
-
 	@SuppressWarnings("ConstantConditions")
 	public List<Integer> rightSideView(TreeNode root) {
+		Queue<TreeNode> nodeQueue = new LinkedList<>(); // 定义队列，存储广搜结果
+		Queue<Integer> depthQueue = new LinkedList<>(); // 定义广搜每个节点对应的层数
 		List<Integer> result = new ArrayList<>();
 		if (root != null) {
 			nodeQueue.add(root);
