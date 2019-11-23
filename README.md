@@ -212,8 +212,8 @@
 
 | 题目序号 |                           问题描述                           |  难度  |   分类   |
 | :------: | :----------------------------------------------------------: | :----: | :------: |
-|   277    | [火星字典](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test269.java) |  Hard  |      |
-|   992    |[最深节点的最小子树](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/meituan/Test865.java) | Medium |      |
+|   269    | [火星字典](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test269.java) |  Hard  |      |
+|   865    |[最深节点的最小子树](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/meituan/Test865.java) | Medium |      |
 
 #### 滴滴
 
