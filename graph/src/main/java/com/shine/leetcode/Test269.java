@@ -68,11 +68,11 @@ public class Test269 {
 				Character c2 = j < n2 ? w2.charAt(j) : null;
 
 				if (c1 != null && !adjList.containsKey(c1)) {
-					adjList.put(c1, new ArrayList<Character>());
+					adjList.put(c1, new ArrayList<>());
 				}
 
 				if (c2 != null && !adjList.containsKey(c2)) {
-					adjList.put(c2, new ArrayList<Character>());
+					adjList.put(c2, new ArrayList<>());
 				}
 
 				if (c1 != null && c2 != null && c1 != c2 && !found) {
@@ -84,7 +84,7 @@ public class Test269 {
 
 		Set<Character> visited = new HashSet<>();
 		Set<Character> loop = new HashSet<>();
-		Stack<Character> stack = new Stack<Character>();
+		Stack<Character> stack = new Stack<>();
 
 		for (Character key : adjList.keySet()) {
 			if (!visited.contains(key)) {

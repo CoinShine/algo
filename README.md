@@ -68,7 +68,7 @@
 |   113    | [二叉树路径之和](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test113.java) | Medium |    低    |
 |   226    | [翻转二叉树](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test226.java) |  Easy  |    中    |
 |   236    | [最近公共祖先](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test236.java) | Medium |    中    |
-|   236    | [二叉查找树最近公共祖先](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test235.java) |  Easy  |    低    |
+|   235    | [二叉查找树最近公共祖先](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test235.java) |  Easy  |    低    |
 |   114    | [二叉树展开为链表](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test114.java) | Medium |    中    |
 |   199    | [二叉树右视图](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test199.java) | Medium |    中    |
 |   207    | [课程安排(图)](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test207.java) | Medium |    低    |
