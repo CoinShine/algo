@@ -116,7 +116,7 @@
 |    03    | [无重复最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test03.java) | Medium |    高    |
 |   340    | [至多包含 K 个不同字符的最长子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test340.java) | Hard |    低    |
 |   187    | [重复的DNA序列](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test187.java) | Medium |    低    |
-|    76    | [最小覆盖子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java) |  Hard  |   偏中   |
+|    76    | [最小窗口子串](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test76.java) |  Hard  |   偏中   |
 |    01    | [两数相加](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test01.java) |  Easy  |    高    |
 |    15    | [三数相加(须分析答案)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test15.java) | Medium |    中    |
 |    43    | [字符串相乘](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Medium |    中    |
@@ -125,10 +125,10 @@
 
 ### 数组
 
-| 题目序号 |                           问题描述                           | 难度 | 出现频次 |
-| :------: | :----------------------------------------------------------: | :--: | :------: |
-|   169    | [求众数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test169.java) | Easy | 低 |
-|          | [未排序数组求K大的数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/FindKth.java) |  |  |
+| 题目序号 |                           问题描述                           |  难度  |   出现频次   |
+| :------: | :----------------------------------------------------------: | :----: | :------: |
+|   169    |[求众数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test169.java) | Easy | 低 |
+|          |[未排序数组求K大的数](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/FindKth.java) |  |
 
 ### 动态规划
 
