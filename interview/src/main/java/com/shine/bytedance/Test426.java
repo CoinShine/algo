@@ -41,7 +41,7 @@ public class Test426 {
 				// to close DLL later on
 				first = node;
 			}
-			last = node;
+			last = node; // 指针后移
 			// right
 			helper(node.right);
 		}

@@ -34,7 +34,7 @@ import java.util.List;
  * 输出: false
  * 解释: 输入为: [5,1,4,null,null,3,6]。
  *      根节点的值为 5 ，但是其右子节点值为 4 。
- * 分析：方法一 将树进行中序遍历，判断得到的结果是否为上升序列，如果是怎为二叉搜索树 所有的节点遍历一次 时间复杂度为O(N)
+ * 分析：方法一 将树进行中序遍历，判断得到的结果是否为上升序列，如果是则为二叉搜索树 所有的节点遍历一次 时间复杂度为O(N)
  * 		方法二 递归 分别求出左右子树中最小值和最大值，比较左子树中的最大值和根节点和右子树中的最小值的关系是否满足
  * 			  left_max<=root<=right_min 时间复杂度为O(N)
  * @author shine
@@ -52,7 +52,7 @@ public class Test98 {
 		inorder(result,root);
 		List<Integer> temp = new ArrayList<>(result);
 		Collections.sort(result);
-		return temp.equals(result) && temp.size()!=new HashSet<>(result).size();
+		return temp.equals(result) && temp.size()==new HashSet<>(result).size();
 
 	}
 
