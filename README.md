@@ -186,7 +186,7 @@
 |   317    | [离建筑物最近的距离](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test317.java) |  Hard  |        BFS         |
 |   1014   | [最佳观光组合](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test1014.java) | Medium |                    |
 |   314    | [二叉树的垂直遍历](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test314.java) | Medium |                    |
-|   426    | [将二叉树转为双向链表](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test426.java) |  Hard  |                    |
+|   426    | [将二叉树转为双向链表](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test426.java) |  Medium  |       中序遍历             |
 |   834    | [树中距离之和](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test834.java) |  Hard  |                    |
 |   670    | [最大交换](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test670.java) | Medium |        贪心        |
 |   556    | [下一个更大元素III](https://github.com/CoinShine/algo/blob/master/interview/src/main/java/com/shine/bytedance/Test556.java) | Medium |                    |

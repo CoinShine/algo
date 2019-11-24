@@ -36,8 +36,7 @@ public class Test426 {
 				// with the current one (node)
 				last.right = node;
 				node.left = last;
-			}
-			else {
+			} else {
 				// keep the smallest node
 				// to close DLL later on
 				first = node;
@@ -52,7 +51,7 @@ public class Test426 {
 		if (root == null) return null;
 
 		helper(root);
-		// close DLL
+		// 将最后一个节点和第一个节点相连
 		last.right = first;
 		first.left = last;
 		return first;

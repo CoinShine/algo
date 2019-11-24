@@ -4,6 +4,27 @@ import org.junit.Test;
 
 /**
  * DESCRIPTION:二叉树原地转链表
+ * 例如，给定二叉树
+ *
+ *     1
+ *    / \
+ *   2   5
+ *  / \   \
+ * 3   4   6
+ * 将其展开为：
+ *
+ * 1
+ *  \
+ *   2
+ *    \
+ *     3
+ *      \
+ *       4
+ *        \
+ *         5
+ *          \
+ *           6
+ *
  * 单链表仍然使用树的结构，left=null right=next
  * @author Shine
  * @create 2019/9/17 15:48
@@ -12,10 +33,7 @@ public class Test114 {
 	public void flatten(TreeNode root) {
 
 		while (root != null) {
-			//左子树为 null，直接考虑下一个节点
-			if (root.left == null) {
-				root = root.right;
-			} else {
+			if (root.left != null){
 				// 找左子树最右边的节点
 				TreeNode pre = root.left;
 				while (pre.right != null) {
@@ -26,9 +44,9 @@ public class Test114 {
 				// 将左子树插入到右子树的地方
 				root.right = root.left;
 				root.left = null;
-				// 考虑下一个节点
-				root = root.right;
 			}
+			// 考虑下一个节点
+			root = root.right;
 		}
 	}
 
@@ -60,6 +78,26 @@ public class Test114 {
 			val = x;
 		}
 	}
+
+
+
+
+
+	public void treeToList(TreeNode root){
+		while (root!=null){
+			if(root.left!=null){
+				TreeNode temp = root.left;
+				while (temp.right!=null){
+					temp = temp.right;
+				}
+				temp.right = root.right;
+				root.right = root.left;
+				root.left = null;
+			}
+			root = root.right;
+		}
+	}
+
 }
 
 
