@@ -1,5 +1,9 @@
 package com.shine.leetcode;
-import com.shine.pojo.TreeNode;
+
+import org.junit.Test;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * description: 求二叉树的最大深度
@@ -20,4 +24,63 @@ public class Test104 {
 	public int maxDepth(TreeNode root) {
 		return root == null ? 0:Math.max(maxDepth(root.left),maxDepth(root.right))+1;
 	}
+
+	public int maxDepth1(TreeNode root){
+		Queue<TreeNode> queue = new LinkedList<>();
+		Queue<Integer> level = new LinkedList<>();
+		int depth =1;
+		int maxLength = 0;
+		if(root == null) return maxLength;
+		queue.add(root);
+		level.add(depth);
+		while (!queue.isEmpty()){
+			int size = queue.size();
+			for (int i = 0; i < size; i++) {
+				TreeNode currentNode = queue.poll();
+				Integer lev = level.poll();
+				lev++;
+				if(currentNode.left!=null){
+					queue.add(currentNode.left);
+					level.add(lev);
+				}
+				if(currentNode.right!=null){
+					queue.add(currentNode.right);
+					level.add(lev);
+				}
+				if(currentNode.left==null&&currentNode.right==null){
+					maxLength = Math.max(maxLength,--lev);
+				}
+
+			}
+		}
+		return maxLength;
+	}
+
+
+	@Test
+	public void test01(){
+		TreeNode a = new TreeNode(3);
+		TreeNode b = new TreeNode(9);
+		TreeNode c = new TreeNode(20);
+		TreeNode d = new TreeNode(15);
+		TreeNode e = new TreeNode(7);
+		a.left = b;
+		a.right = c;
+		c.left = d;
+		c.right = e;
+		int i = maxDepth1(a);
+		System.out.println(i);
+	}
+
+	 class TreeNode {
+		public int val;
+		public TreeNode left;
+		public TreeNode right;
+		TreeNode(int x) {
+			val = x;
+		}
+
+	}
+
 }
+

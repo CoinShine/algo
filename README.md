@@ -74,9 +74,9 @@
 |   207    | [课程安排(图)](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test207.java) | Medium |    低    |
 |   269    | [火星字典(图)](https://github.com/CoinShine/algo/blob/master/graph/src/main/java/com/shine/leetcode/Test269.java) | Hard |    高    |
 |    98    | [验证二叉搜索树](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test98.java) | Medium |    低    |
-|   102    | [二叉树的层次遍历（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test102.java) | Medium |    中    |
-|   104    | [二叉树的最大深度（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test104.java) |  Easy  |    低    |
-|   111    | [二叉树的最小深度（广搜和宽搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test111.java) |  Easy  |    低    |
+|   102    | [二叉树的层次遍历（广搜和深搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test102.java) | Medium |    中    |
+|   104    | [二叉树的最大深度（广搜和深搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test104.java) |  Easy  |    低    |
+|   111    | [二叉树的最小深度（广搜和深搜）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test111.java) |  Easy  |    低    |
 |   250    | [统计同值子树（DFS）](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test250.java) |  Medium  |    很低    |
 |   230    | [二叉搜索树中第K小的元素](https://github.com/CoinShine/algo/blob/master/tree/src/main/java/com/shine/leetcode/Test230.java) |  Medium  |    低    |
 
