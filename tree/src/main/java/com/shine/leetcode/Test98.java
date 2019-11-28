@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * description: 验证二叉搜索树
@@ -62,7 +63,22 @@ public class Test98 {
 		result.add(node.val);
 		inorder(result,node.right);
 	}
-
+	long pre = Long.MIN_VALUE;
+	private boolean inOrder1(TreeNode root){
+		Stack<TreeNode> stack = new Stack<>();
+		while (root!=null || !stack.isEmpty()){
+			while (root!=null){
+				stack.add(root);
+				root = root.left;
+			}
+			root = stack.pop();
+			if(root.val > pre)
+				pre = root.val;
+			else return false;
+			root=root.right;
+		}
+		return true;
+	}
 
 	/**
 	 * 使用递归
@@ -87,12 +103,6 @@ public class Test98 {
 		return helper(root.right);
 	}
 
-	public boolean isValid(TreeNode node,Integer min,Integer max){
-		if(node == null) return true;
-		if(min!=null && node.val<=min) return false;
-		if(max!=null && node.val >= max) return false;
-		return isValid(node.left,min, node.val) && isValid(node.right,node.val,max);
-	}
 
 	public class TreeNode {
        int val;

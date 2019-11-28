@@ -1,6 +1,7 @@
 package com.shine.leetcode;
 
 import com.shine.pojo.TreeNode;
+import org.junit.Test;
 
 import java.util.Stack;
 
@@ -20,18 +21,46 @@ import java.util.Stack;
 public class Test230 {
 	public int kthSmallest(TreeNode root, int k) {
 		Stack<TreeNode> stack = new Stack<>();
-		TreeNode p = root;
 		int res = 0;
-		while (p!=null || !stack.isEmpty()){
-			while (p!=null){
-				stack.add(p);
-				p = p.left;
+		while (root!=null || !stack.isEmpty()){
+			while (root!=null){
+				stack.add(root);
+				root = root.left;
 			}
-			p = stack.pop();
+			root = stack.pop();
 			res+=1;
-			if(res == k) return p.val;
-			p=p.right;
+			if(res == k) return root.val;
+			root=root.right;
 		}
 		return 0;
+	}
+
+	private int res = 0;
+	private int count = 0;
+	public int kthSmallest1(TreeNode root, int k) {
+		inOrder(root,k);
+		return res;
+	}
+
+	public void inOrder(TreeNode root,int k){
+		if(root == null) return;
+		inOrder(root.left,k);
+		count++;
+		if(count == k) res=root.val;
+		inOrder(root.right,k);
+	}
+
+
+	@Test
+	public void test01(){
+		TreeNode a = new TreeNode(3);
+		TreeNode b = new TreeNode(1);
+		TreeNode c = new TreeNode(4);
+		TreeNode d = new TreeNode(2);
+		a.left = b;
+		a.right = c;
+		b.right = d;
+		inOrder(a,3);
+		System.out.println(res);
 	}
 }

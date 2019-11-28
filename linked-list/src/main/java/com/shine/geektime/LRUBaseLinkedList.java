@@ -1,6 +1,5 @@
 package com.shine.geektime;
 
-import java.util.PriorityQueue;
 import java.util.Scanner;
 
 /**
@@ -10,8 +9,6 @@ import java.util.Scanner;
  * @version 1.0
  */
 public class LRUBaseLinkedList<T> {
-
-	PriorityQueue pq;
 
 	/**
 	 * 默认链表容量

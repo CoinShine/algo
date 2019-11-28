@@ -43,7 +43,7 @@ public class Test239 {
 	public int[] maxSlidingWindow(int[] nums, int k) {
 		if(nums.length == 0) return nums;
 		Deque<Integer> deque = new ArrayDeque<>();// 设置滑动窗口的大小，记录nums的角标
-		int size = nums.length - k < 0 ? 0 : nums.length - k;
+		int size = Math.max(nums.length - k, 0);
 		int[] res = new int[size+1]; // 结果集
 		for (int i = 0; i < nums.length; i++) {
 			if(i>=k && deque.getFirst() <=i-k){
