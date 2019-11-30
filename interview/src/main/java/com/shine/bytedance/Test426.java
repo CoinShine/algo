@@ -1,7 +1,9 @@
 package com.shine.bytedance;
 
+import java.util.Stack;
+
 /**
- * description:将二叉树转为双向链表(就地)
+ * description: 将二叉搜索树转化为排序的双向链表(就地)
  *
  * 标准的中序遍历采用 左 -> 根 -> 右 的顺序，其中 左 和 右 的部分调用递归。
  *
@@ -27,24 +29,65 @@ public class Test426 {
 	Node last = null;
 
 	public void helper(Node node) {
-		if (node != null) {
-			// left
-			helper(node.left);
-			// node
-			if (last != null) {
-				// link the previous node (last)
-				// with the current one (node)
-				last.right = node;
-				node.left = last;
-			} else {
-				// keep the smallest node
-				// to close DLL later on
-				first = node;
-			}
-			last = node; // 指针后移
-			// right
-			helper(node.right);
+		if(node==null) return;
+		// left
+		helper(node.left);
+
+		if (last != null) { // 连接前一个节点和后一个节点
+			last.right = node;
+			node.left = last;
+		} else { // 第一个节点赋值
+			first = node;
 		}
+		last = node; // 指针后移
+
+		// right
+		helper(node.right);
+
+		//if (node != null) {
+		//	// left
+		//	helper(node.left);
+		//	// node
+		//	if (last != null) {
+		//		// link the previous node (last)
+		//		// with the current one (node)
+		//		last.right = node;
+		//		node.left = last;
+		//	} else {
+		//		// keep the smallest node
+		//		// to close DLL later on
+		//		first = node;
+		//	}
+		//	last = node; // 指针后移
+		//	// right
+		//	helper(node.right);
+		//}
+	}
+
+
+	/**
+	 * 中序非递归写法
+	 * @param node
+	 */
+	public void helper1(Node node) {
+		Stack<Node> stack = new Stack<>();
+		Node p = node;
+		while(p!=null || !stack.isEmpty()){
+			while(p!=null){
+				stack.add(p);
+				p = p.left;
+			}
+			p=stack.pop();
+			if(last!=null){
+				last.right=p;
+				p.left=last;
+			}else{
+				first = p;
+			}
+			last = p;
+			p=p.right;
+		}
+
 	}
 
 	public Node treeToDoublyList(Node root) {

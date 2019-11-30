@@ -41,7 +41,7 @@ public class Test386 {
 			result.add(currentValue);
 		}
 		for(int nextBit = 0; nextBit <= 9;nextBit++){
-			if(currentValue == 0){
+			if(currentValue == 0){ // 去掉0开头全为0的节点
 				if(nextBit == 0) continue;
 			}
 			lexicalOrder(result,currentValue*10+nextBit,maxNum);
@@ -58,20 +58,21 @@ public class Test386 {
 		Stack<Integer> tree = new Stack<Integer>();
 		if(n < 10) {
 			for(int i = n;i > 0;i--) tree.push(i);
-		}else for(int i = 9;i > 0;i--) tree.push(i);
+		}else{
+			for(int i = 9;i > 0;i--) tree.push(i);
+		}
 		int t,m;
 		while(!tree.empty()){
-			t = tree.peek();
-			tree.pop();
+			t = tree.pop();
 			res.add(t);
-			if(t*10>n) continue;
+			if(t*10>n) continue; // 如果超过上界，在下一次循环
 			else {
-				m = n - t * 10;
+				m = n - t * 10; // 剩余的节点
 				if(m >9) m = 9;
 			}
-			for(int i = m;i >= 0;i--)
-				if(t*10+i<=n)
-					tree.push(t*10+i);
+			for(int i = m;i >= 0;i--) {
+				if (t * 10 + i <= n) tree.push(t * 10 + i);
+			}
 		}
 		return res;
 	}

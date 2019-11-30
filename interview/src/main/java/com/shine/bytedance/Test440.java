@@ -30,34 +30,33 @@ public class Test440 {
 
 	public int findKthNumber(int n,int k){
 		int p = 1;//作为一个指针，指向当前所在位置，当p==k时，也就是到了排位第k的数
-		int prefix = 1;//前缀
+		int current = 1;//前缀
 		while(p < k) {
-			long count = getCount(prefix, n);//获得当前前缀下所有子节点的和
+			long count = getCount(n,current, current+1);//获得当前前缀下所有子节点的和
 			if(p + count > k) { //第k个数在当前前缀下
-				prefix *= 10;
+				current *= 10;
 				p++; //把指针指向了第一个子节点的位置，比如11乘10后变成110，指针从11指向了110
 			} else if(p + count <= k) { //第k个数不在当前前缀下
-				prefix ++;
+				current ++;
 				p += count;//注意这里的操作，把指针指向了下一前缀的起点
 			}
 		}
-		return prefix;
+		return current;
 	}
 
 	/**
 	 * 确定指定前缀下所有子节点数
-	 * @param prefix
+	 * @param current
 	 * @param n
 	 * @return
 	 */
-	private long getCount(long prefix, long n){
-		long cur = prefix; // prefix是前缀，n是上界
-		long next = prefix+1; // 下一个前缀
+	private long getCount(long n,long current,long next){
+		 // prefix是前缀，n是上界,next 是下一个前缀
 		long count = 0;
-		while (cur <=n){
-			count+=Math.min(n+1,next) - cur; // 考虑next的值大于上界的情况，下一个前缀的起点减当前前缀起点
-			cur*=10;
-			next*=10; // 到下一层延伸，如果说刚刚prefix是1，next是2，那么现在分别变成10和201为前缀的子节点增加10个，十叉树增加一层, 变成了两层
+		while (current <=n){
+			count+=Math.min(n+1,next) - current; // 考虑next的值大于上界的情况，下一个前缀的起点减当前前缀起点 这里如果next超过了上界，
+			current*=10;						 // 比如现在prefix = 10  next=20  n=13 此时计算前缀1 下边的节点数为13-10+1 需要将10本身计算进去
+			next*=10; // 到下一层延伸，如果说刚刚prefix是1，next是2，那么现在分别变成10和20为前缀的子节点增加10个，十叉树增加一层, 变成了两层
 		}
 		return count;
 	}
