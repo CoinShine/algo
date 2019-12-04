@@ -24,12 +24,11 @@ package com.shine.advanced.leetcode;
 public class Test208 {
 
 	private TrieNode root;
-	/** Initialize your data structure here. */
+
 	public Test208() {
 		root = new TrieNode();
 	}
 
-	/** Inserts a word into the trie. */
 	public void insert(String word) {
 		TrieNode node = root;
 		for (int i = 0; i < word.length(); i++) {
@@ -42,8 +41,6 @@ public class Test208 {
 		node.setEnd();
 	}
 
-
-	/** Returns if the word is in the trie. */
 	public boolean search(String word) {
 		TrieNode node = root;
 		for (int i = 0; i < word.length(); i++) {
@@ -58,7 +55,6 @@ public class Test208 {
 
 	}
 
-	/** Returns if there is any word in the trie that starts with the given prefix. */
 	public boolean startsWith(String prefix) {
 		TrieNode node = root;
 		for (int i = 0; i < prefix.length(); i++) {
@@ -78,15 +74,12 @@ public class Test208 {
 	 */
 	class TrieNode {
 
-		// R links to node children
 		private TrieNode[] children;
-
 		private boolean isEnd;
 
 		public TrieNode() {
 			children = new TrieNode[26];
 		}
-
 		public boolean containsKey(char ch) {
 			return children[ch -'a'] != null;
 		}
