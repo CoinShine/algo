@@ -47,7 +47,7 @@ public class Test212 {
 		}
 		int m = board.length;
 		int n = board[0].length;
-		boolean[][] visited = new boolean[m][n];
+		boolean[][] visited = new boolean[m][n]; // dfs 标记是否访问过
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
 				dfs(board,visited,"",i,j,trie);
@@ -57,18 +57,20 @@ public class Test212 {
 	}
 
 	private void dfs(char[][] board, boolean[][] visited, String str, int i, int j, Test208 trie) {
-		if(i < 0 || i >= board.length || j < 0|| j >= board[0].length) return;
+		if(i < 0 || i >= board.length || j < 0|| j >= board[0].length) return; // 边界条件判断
 		if(visited[i][j]) return;
 		str += board[i][j];
-		if(!trie.startsWith(str)) return;
+		if(!trie.startsWith(str)) return; // 这相当于剪枝
 
 		if(trie.search(str)) res.add(str);
 		visited[i][j] = true;
+		// 四个方向遍历
 		dfs(board,visited,str,i-1,j,trie);
 		dfs(board,visited,str,i+1,j,trie);
 		dfs(board,visited,str,i,j-1,trie);
 		dfs(board,visited,str,i,j+1,trie);
-		visited[i][j] = false; // 回溯
+
+		visited[i][j] = false; // 回溯  因为str后边没有用到，所以没有重置str
 	}
 	
 	@Test

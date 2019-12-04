@@ -36,64 +36,36 @@ public class Test211 {
 		TrieNode node = root;
 		for (int i = 0; i < word.length(); i++) {
 			char c = word.charAt(i);
-			if(!node.contains(c)){
-				node.setTrie(c,new TrieNode());
+			if(node.children[c-'a']==null){
+				node.children[c-'a'] = new TrieNode();
 			}
-			node=node.get(c);
+			node = node.children[c-'a'];
 		}
-		node.setEnd();
+		node.isEnd = true;
 	}
 
 	/** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
 	public boolean search(String word) {
 		return search_trie(root,word);
 	}
-
 	private  boolean search_trie(TrieNode node,String word){
-		if("".equals(word)){
-			return node.isEnd();
-		}
+		if("".equals(word)) return node.isEnd;
 		char c = word.charAt(0);
 		if(c == '.'){
 			for (int i = 0; i < 26; i++) {
-				if(node.child[i] != null && search_trie(node.child[i],word.substring(1))){
-					return true;
-				}
+				if(node.children[i] != null && search_trie(node.children[i],word.substring(1))) return true;
 			}
 		}else{
-			if(node.contains(c)&&search_trie(node.get(c),word.substring(1))){
-				return true;
-			}
+			return node.children[c-'a']!=null && search_trie(node.children[c-'a'], word.substring(1));
 		}
 		return false;
 	}
 
 	class TrieNode{
-		private final int TRIE_NUMS = 26;
-		private TrieNode[] child ;
-		private boolean is_end;
+		private TrieNode[] children;
+		private boolean isEnd;
 		public TrieNode(){
-			child = new TrieNode[TRIE_NUMS];
-		}
-
-		private void setTrie(char ch, TrieNode node){
-			child[ch-'a'] = node;
-		}
-
-		private TrieNode get(char ch){
-			return child[ch-'a'];
-		}
-
-		private boolean contains(char ch){
-			return child[ch-'a'] != null;
-		}
-
-		private void setEnd(){
-			this.is_end = true;
-		}
-
-		private boolean isEnd(){
-			return is_end;
+			children = new TrieNode[26];
 		}
 	}
 
