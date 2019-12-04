@@ -1,10 +1,15 @@
 package com.shine.leetcode;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Set;
 import java.util.Stack;
 
@@ -41,11 +46,85 @@ import java.util.Stack;
  * 即，若要该点加入到 stack 里，必须先把跟它有联系的顶点都处理完。举例说明，如果我要学习课程 A，
  * 得先把课程 B，C 以及 D 都看完。
  * 3、loop 集合，为了有效防止有向图里出现环的情况。举例说明如下。
+ * 	  当每一轮访问结束后，都必须要把 loop 集合清空，才能把其他顶点也加入到堆栈里
+ *
+ * 第一步是根据输入构建一个有向图；第二步是对这个有向图进行拓扑排序
  * @author shine
  * @date 2019/11/13 12:12
  * @version 1.0
  */
 public class Test269 {
+
+	/**
+	 * 将词典中字符串的字符两两对比，只有第一个不同的字符才是正确的排序，如ert和wrf，只能推断出e的优先级高于w，剩余字符的优先级不能推断。
+	 * 将字符串的优先级构建为图，然后进行拓扑排序。如果图中无环，则将拓扑排序输出，否则顺序是非法的
+	 * @param words
+	 * @return
+	 */
+	public String alienOrder0(String[] words) {
+		//1.构建图
+		Map<Character, Set<Character>> map = new HashMap<>();
+		for (int i = 0; i < words.length - 1; i++) {
+			for (int j = 0; j < words[i].length() && j < words[i + 1].length(); j++) {
+				//如果字符相同，比较下一个
+				if (words[i].charAt(j) == words[i + 1].charAt(j)) continue;
+				//保存第一个不同的字符顺序
+				Set<Character> set = map.getOrDefault(words[i].charAt(j), new HashSet<>());
+				set.add(words[i + 1].charAt(j));
+				map.put(words[i].charAt(j), set);
+				break;
+			}
+		}
+
+		//2.拓扑排序
+		//创建保存入度的数组
+		int[] degrees = new int[26];
+		Arrays.fill(degrees, -1);
+		//注意，不是26字母都在words中出现，所以出度分为两种情况：没有出现的字母出度为-1，出现了的字母的出度为非负数
+		for (String str : words) {
+			//将出现过的字符的出度设定为0
+			for (char c : str.toCharArray())
+				degrees[c - 'a'] = 0;
+		}
+		for (char key : map.keySet()) {
+			for (char val : map.get(key)) {
+				degrees[val - 'a']++;
+			}
+		}
+		//创建StringBuilder保存拓扑排序
+		StringBuilder sb = new StringBuilder();
+		//创建一个Queue保存入度为0的节点
+		Queue<Character> list = new LinkedList<>();
+
+		int count = 0;//计算图中节点数
+		for (int i = 0; i < 26; i++) {
+			if (degrees[i] != -1) count++;
+			if (degrees[i] == 0) {
+				list.add((char) ('a' + i));
+			}
+		}
+
+		while (!list.isEmpty()) {
+			Character cur = list.poll();
+			sb.append(cur);
+			//将邻接点出度-1
+			if (map.containsKey(cur)) {
+				Set<Character> set = map.get(cur);
+				for (Character c : set) {
+					degrees[c - 'a']--;
+					if (degrees[c - 'a'] == 0) list.add(c);
+				}
+			}
+		}
+
+		//判断是否有环
+		if (sb.length() != count) return "";
+		else return sb.toString();
+	}
+
+
+
+
 	// 基本情况处理，比如输入为空，或者输入的字符串只有一个
 	public String alienOrder(String[] words) {
 		if (words == null || words.length == 0)
@@ -63,7 +142,7 @@ public class Test269 {
 
 			boolean found = false;
 
-			for (int j = 0; j < Math.max(w1.length(), w2.length()); j++) {
+			for (int j = 0; j < Math.max(n1,n2); j++) {
 				Character c1 = j < n1 ? w1.charAt(j) : null;
 				Character c2 = j < n2 ? w2.charAt(j) : null;
 
@@ -101,9 +180,8 @@ public class Test269 {
 		}
 		return sb.toString();
 	}
-	// 将当前节点 u 加入到 visited 集合以及 loop 集合中。
-	private boolean topologicalSort(Map<Character, List<Character>> adjList, char u,
-							Set<Character> visited, Set<Character> loop, Stack<Character> stack) {
+	// 将当前节点 u 加入到 visited 集合以及 loop 集合中。 判断拓扑排序是否有环
+	private boolean topologicalSort(Map<Character, List<Character>> adjList, char u, Set<Character> visited, Set<Character> loop, Stack<Character> stack) {
 		visited.add(u);
 		loop.add(u);
 
@@ -124,5 +202,14 @@ public class Test269 {
 		loop.remove(u);
 		stack.push(u);
 		return false;
+	}
+
+
+	@Test
+	public void test01(){
+
+		String[] words = {"wrt","wrf","er","ett", "rftt"};
+		String s = alienOrder(words);
+		System.out.println(s);
 	}
 }

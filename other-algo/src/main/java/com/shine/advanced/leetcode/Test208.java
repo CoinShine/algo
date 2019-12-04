@@ -79,24 +79,22 @@ public class Test208 {
 	class TrieNode {
 
 		// R links to node children
-		private TrieNode[] links;
-
-		private final int R = 26;
+		private TrieNode[] children;
 
 		private boolean isEnd;
 
 		public TrieNode() {
-			links = new TrieNode[R];
+			children = new TrieNode[26];
 		}
 
 		public boolean containsKey(char ch) {
-			return links[ch -'a'] != null;
+			return children[ch -'a'] != null;
 		}
 		public TrieNode get(char ch) {
-			return links[ch -'a'];
+			return children[ch -'a'];
 		}
 		public void put(char ch, TrieNode node) {
-			links[ch -'a'] = node;
+			children[ch -'a'] = node;
 		}
 		public void setEnd() {
 			isEnd = true;

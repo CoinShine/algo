@@ -63,6 +63,10 @@ public class Test98 {
 		result.add(node.val);
 		inorder(result,node.right);
 	}
+
+	/**
+	 * 非递归中序遍历
+	 */
 	long pre = Long.MIN_VALUE;
 	private boolean inOrder1(TreeNode root){
 		Stack<TreeNode> stack = new Stack<>();

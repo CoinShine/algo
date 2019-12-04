@@ -62,6 +62,12 @@ public class Test1012 {
 	}
 
 
+	/**
+	 * 计算阶乘
+	 * @param m
+	 * @param n
+	 * @return
+	 */
 	public int A(int m, int n) {
 		return n == 0 ? 1 : A(m, n - 1) * (m - n + 1);
 	}
