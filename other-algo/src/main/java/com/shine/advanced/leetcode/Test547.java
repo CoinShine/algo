@@ -1,5 +1,7 @@
 package com.shine.advanced.leetcode;
 
+import org.junit.Test;
+
 /**
  * description: 朋友圈问题
  * 班上有 N 名学生。其中有些人是朋友，有些则不是。他们的友谊具有是传递性。如果已知 A 是 B 的朋友，
@@ -52,10 +54,15 @@ public class Test547 {
 	}
 
 
-	private int[] id;
-	private int[] size;
-	private int count;
+	private int[] id;  // 节点个数
+	private int[] size; // 子树规模
+	private int count; // 朋友圈个数
 
+	/**
+	 * 将小的树合并到大的树 使得合并后的树更加平衡
+	 * @param p
+	 * @param q
+	 */
 	private void union(int p,int q){
 		int i = find(p);
 		int j = find(q);
@@ -71,9 +78,9 @@ public class Test547 {
 	}
 
 	private int find(int p){
-		while (p!=id[p]){
-			id[p] =id[id[p]]; // 指向父节点的父节点
-			 p = id[p];
+		while (p!=id[p]){  // id[p] 是p的父节点
+			id[p] =id[id[p]]; // 指向父节点的父节点 压缩
+			 p = id[p]; // 移动节点
 		}
 		return p;
 	}
@@ -98,5 +105,11 @@ public class Test547 {
 			}
 		}
 		return count;
+	}
+
+	@Test
+	public void test01(){
+		int[][] nums = {{1,1,0},{1,1,0},{0,0,1}};
+		findCircleNum02(nums);
 	}
 }

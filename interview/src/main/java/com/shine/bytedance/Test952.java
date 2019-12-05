@@ -18,7 +18,7 @@ import java.util.Set;
  *
  * 思路
  *
- * 设 W = \max(A[i])W=max(A[i])，R = \sqrt{W}R=W。对于数组 AA 中的每个数，最多只有一个非本身的质因数 p 满足 p≥R。
+ * 设 W = \max(A[i])W=max(A[i])，R = \sqrt{W}R=W。对于数组 A 中的每个数，最多只有一个非本身的质因数 p 满足 p≥R。
  * 这就意味着最多只有 R +A.length 个不同的质因数： 为本身的质因数最多有 A.length 个，非本身的质因数一定比 R 小，最多有 R 个。
  *
  * 算法：
