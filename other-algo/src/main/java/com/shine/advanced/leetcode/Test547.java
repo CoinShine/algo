@@ -111,5 +111,9 @@ public class Test547 {
 	public void test01(){
 		int[][] nums = {{1,1,0},{1,1,0},{0,0,1}};
 		findCircleNum02(nums);
+		while(Thread.activeCount() > 2){
+			Thread.yield();
+		}
+
 	}
 }
