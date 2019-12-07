@@ -58,7 +58,7 @@ public class Test78 {
 			item.add(nums[j]);
 			result.add(new ArrayList<>(item));
 			generate2(j+1,nums,item,result);
-			item.remove(item.size()-1);
+			item.remove(item.size()-1); // 回溯
 		}
 	}
 

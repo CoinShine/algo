@@ -80,9 +80,6 @@ public class Test114 {
 	}
 
 
-
-
-
 	public void treeToList(TreeNode root){
 		while (root!=null){
 			if(root.left!=null){
@@ -99,7 +96,3 @@ public class Test114 {
 	}
 
 }
-
-
-
-
