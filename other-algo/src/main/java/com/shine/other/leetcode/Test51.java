@@ -116,12 +116,12 @@ public class Test51 {
 
 
 
-	List<List<Integer>> result = new ArrayList<>();
-	Set<Integer> cols = new HashSet<>();
-	Set<Integer> pie = new HashSet<>();
-	Set<Integer> na = new HashSet<>();
+	private List<List<Integer>> result = new ArrayList<>();
+	private Set<Integer> cols = new HashSet<>();
+	private Set<Integer> pie = new HashSet<>();
+	private Set<Integer> na = new HashSet<>();
 	public List<List<String>> solveNQueens2(int n) {
-		if(n<1) return new ArrayList<>();
+		if(n<2) return new ArrayList<>();
 		DFS(n,0,new ArrayList<>());
 		return generate_result(n);
 	}
@@ -150,6 +150,7 @@ public class Test51 {
 	}
 
 	public List<List<String>> generate_result(int n){
+		System.out.println(result.toString());
 		List<List<String>> re = new ArrayList<>();
 		for (List<Integer> list : result) {
 			List<String> element = new ArrayList<>();

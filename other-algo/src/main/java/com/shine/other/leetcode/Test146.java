@@ -1,7 +1,6 @@
 package com.shine.other.leetcode;
 
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 /**
  * description: LRU缓存机制
@@ -27,85 +26,81 @@ import java.util.Map;
 public class Test146 extends LinkedHashMap<Integer, Integer> {
 	private int capacity;
 
-	public Test146(int capacity) {
-		super(capacity, 0.75F, true);
-		this.capacity = capacity;
-	}
-
-	public int get(int key) {
-		return super.getOrDefault(key, -1);
-	}
-
-	public void put(int key, int value) {
-		super.put(key, value);
-	}
-
-	@Override
-	protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
-		return size() > capacity;
-	}
-
-
-
-	//private ListNode head;
-	//private HashMap<Integer,Integer> map = new HashMap<>();
 	//public Test146(int capacity) {
+	//	super(capacity, 0.75F, true);
 	//	this.capacity = capacity;
-	//	head = new ListNode();
 	//}
 	//
 	//public int get(int key) {
-	//	ListNode p = head;
-	//	ListNode temp = head;
-	//	ListNode pre;
-	//	while (p.next!=null){
-	//		pre = p;
-	//		p = p.next;
-	//		if(key == p.val) {
-	//			pre.next = p.next;
-	//			p.next = temp.next;
-	//			temp.next = p;
-	//			return map.get(key);
-	//		}
-	//	}
-	//	return -1;
+	//	return super.getOrDefault(key, -1);
 	//}
 	//
 	//public void put(int key, int value) {
-	//	ListNode temp = head;
-	//	ListNode pre=head;
-	//	ListNode p = head;
-	//	int size =0;
-	//	while (p.next!=null){
-	//		size++;
-	//		pre = p;
-	//		p = p.next;
-	//		if(key == p.val) {
-	//			pre.next = p.next;
-	//			p.next = temp.next;
-	//			temp.next = p;
-	//			map.put(key,value);
-	//			return;
-	//		}
-	//	}
-	//	if(size>=capacity){
-	//		pre.next = null;
-	//		map.remove(head.val);
-	//	}
-	//	ListNode node = new ListNode(key);
-	//	node.next = temp.next;
-	//	temp.next = node;
-	//	map.put(key,value);
+	//	super.put(key, value);
 	//}
 	//
-	//class ListNode{
-	//	int val;
-	//	ListNode next;
-	//	public ListNode(int val){
-	//		this.val = val;
-	//	}
-	//	public ListNode(){}
+	//@Override
+	//protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
+	//	return size() > capacity;
 	//}
+
+
+
+	private ListNode head;
+	public Test146(int capacity) {
+		this.capacity = capacity;
+		head = new ListNode();
+	}
+
+	public int get(int key) {
+		ListNode p = head;
+		ListNode temp = head;
+		ListNode pre;
+		while (p.next!=null){
+			pre = p;
+			p = p.next;
+			if(key == p.key) {
+				pre.next = p.next;
+				p.next = temp.next;
+				temp.next = p;
+				return p.val;
+			}
+		}
+		return -1;
+	}
+
+	public void put(int key, int value) {
+		ListNode temp = head;
+		ListNode pre=head;
+		ListNode p = head;
+		int size =0;
+		while (p.next!=null){
+			size++;
+			pre = p;
+			p = p.next;
+			if(key == p.key) {
+				pre.next = p.next;
+				p.next = temp.next;
+				temp.next = p;
+				p.val=value;
+				return;
+			}
+		}
+		if(size>=capacity){
+			pre.next = null;
+		}
+		ListNode node = new ListNode();
+		node.key=key;
+		node.val=value;
+		node.next = temp.next;
+		temp.next = node;
+	}
+
+	class ListNode{
+		int key;
+		int val;
+		ListNode next;
+	}
 
 	public static void main(String[] args){
 		Test146 test146 = new Test146(2);

@@ -53,7 +53,7 @@ public class Test90 {
 
 	@Test
 	public void test01() {
-		int[] nums = {3, 1, 2, 2};
+		int[] nums = {1, 2, 2};
 		List<List<Integer>> lists = subsetsWithDup2(nums);
 		System.out.println(lists.toString());
 	}

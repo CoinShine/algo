@@ -34,9 +34,7 @@ public class Test247 {
 	}
 	List<String> helper(int n, int m) {
 		// 第一步：判断输入或者状态是否非法？
-		if (n < 0 || m < 0 || n > m) {
-			throw new IllegalArgumentException("invalid input");
-		}
+		if(n<0) return new ArrayList<>();
 
 		// 第二步：判读递归是否应当结束?
 		if (n == 0) return new ArrayList<String>(Arrays.asList(""));

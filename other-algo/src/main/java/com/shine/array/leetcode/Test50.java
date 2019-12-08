@@ -3,7 +3,7 @@ package com.shine.array.leetcode;
 import org.junit.Test;
 
 /**
- * description:Pow(x, n)
+ * description:Pow(x, n) 实现 pow(x, n) ，即计算 x 的 n 次幂函数
  * 递归分治法
  * 分析：分为递归法和非递归法，面试中推荐使用非递归的方法
  * @author shine
@@ -40,7 +40,7 @@ public class Test50 {
 	}
 	@Test
 	public void test01(){
-		double v = myPow2(2,
+		double v = myPow(2,
 				-2147483648);
 		System.out.println(v);
 	}

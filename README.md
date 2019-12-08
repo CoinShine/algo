@@ -58,7 +58,6 @@
 |    51    | [N皇后](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test51.java) |  Hard  |    中    |
 |   315    | [右侧小于当前元素(归并)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/other/leetcode/Test315.java) |  Hard  |    低    |
 |    50    | [求Pow(x, n)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test78.java) | Medium |    低    |
-|    91    | [解码方法(递归)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test91.java) | Medium |   中    |
 |   247    | [中心对称数 II(递归)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test247.java) | Medium |   中    |
 
 ### 树、图
@@ -146,6 +145,7 @@
 |   152    | [最长乘积子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test152.java) | Medium |    中    |
 |   123    | [股票问题(121,122,123,188,309,714)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test123.java) |  Hard  |    中    |
 |    72    | [编辑距离](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test72.java) |  Hard  |    高    | 
+|    91    | [解码方法](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/array/leetcode/Test91.java) | Medium |   中    |
 ### 高级数据结构
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
