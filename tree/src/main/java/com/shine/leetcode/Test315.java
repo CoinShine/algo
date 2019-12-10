@@ -3,7 +3,6 @@ package com.shine.leetcode;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -13,6 +12,8 @@ import java.util.List;
  * @version 1.0
  */
 public class Test315 {
+
+	private int count_small;
 	public List<Integer> countSmaller(int[] nums) {
 		if(nums.length==0) return new ArrayList<>(0);
 		List<Integer> result = new ArrayList<>();
@@ -24,9 +25,10 @@ public class Test315 {
 		count.add(0); // 第一个节点count_small = 0
 
 		for (int i = 1; i < list.size(); i++) {
-			int[] count_small = new int[]{0}; // 方法局部变量调用需要存引用 基本数据类型返回为空 int count_small =0;是有问题的
-			insert_BSTree(list.get(0), list.get(i), count_small);
-			count.add(count_small[0]);
+			//int[] count_small = new int[]{0}; // 方法局部变量调用需要存引用 基本数据类型返回为空 int count_small =0;是有问题的
+			count_small = 0;
+			insert_BSTree(list.get(0), list.get(i));
+			count.add(count_small);
 		}
 		for (int i = count.size()-1; i >=0 ; i--) {
 			result.add(count.get(i));
@@ -37,19 +39,19 @@ public class Test315 {
 
 
 
-	private void insert_BSTree(BSTreeNode root,BSTreeNode node ,int[] count_small){
+	private void insert_BSTree(BSTreeNode root,BSTreeNode node){
 		if(node.val<root.val){
 			root.count++;
 			if(root.left!=null){
-				insert_BSTree(root.left,node,count_small);
+				insert_BSTree(root.left,node);
 			}else{
 				root.left = node;
 			}
 		}else{
-			if(node.val==root.val) count_small[0] +=root.count;
-			else count_small[0] +=root.count+1;
+			if(node.val==root.val) count_small +=root.count;
+			else count_small +=root.count+1;
 			if(root.right!=null){
-				insert_BSTree(root.right,node,count_small);
+				insert_BSTree(root.right,node);
 			}else{
 				root.right = node;
 			}
@@ -72,12 +74,12 @@ public class Test315 {
 
 	@Test
 	public void test01(){
-		//int[] nums={5,6,2,1};
-		//List<Integer> integers = countSmaller(nums);
-		//System.out.println(integers.toString());
-		int[] a = new int[]{0};
-		test02(a);
-		System.out.println(Arrays.toString(a));
+		int[] nums={5,6,2,1};
+		List<Integer> integers = countSmaller(nums);
+		System.out.println(integers.toString());
+		//int[] a = new int[]{0};
+		//test02(a);
+		//System.out.println(Arrays.toString(a));
 	}
 
 	private void test02(int[] b){
