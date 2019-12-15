@@ -28,6 +28,7 @@ public class Test152 {
 
 	public int maxProduct(int[] nums) {
 		//int dp[] = new int[nums.length+1];  // dp[i] 表示以i个元素结尾的子序列的最大值或最小值
+		// 使用二维dp
 		int max = Integer.MIN_VALUE;
 		int iMin = 1,iMax=1;
 		for (int i = 0; i < nums.length; i++) {

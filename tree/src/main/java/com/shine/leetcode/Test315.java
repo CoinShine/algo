@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class Test315 {
 
-	private int count_small;
+	private int count_small; // 二叉树中比插入节点小的个数
 	public List<Integer> countSmaller(int[] nums) {
 		if(nums.length==0) return new ArrayList<>(0);
 		List<Integer> result = new ArrayList<>();

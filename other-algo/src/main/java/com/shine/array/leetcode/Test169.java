@@ -25,12 +25,10 @@ import java.util.Map;
 public class Test169 {
 	public int majorityElement(int[] nums) {
 		Map<Integer,Integer> numMap = new HashMap<>();
-		int length = nums.length;
 		for (int num : nums) {
 			if (!numMap.containsKey(num)) {
 				numMap.put(num, 1);
-			}
-			else {
+			} else {
 				numMap.put(num, numMap.get(num)+1);
 			}
 		}

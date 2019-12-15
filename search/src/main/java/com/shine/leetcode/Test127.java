@@ -24,7 +24,9 @@ import java.util.Set;
  * <p>
  * 单词与单词之间的转换，可以理解为一张图，图的顶点为单词，如果两个单词可以互相转换
  * 那么两个单词所代表的顶点之间有一条边，从begin到end所有路径中最短的，即为广度优先搜索
- *
+ * beginWord = "hit",
+ * endWord = "cog",
+ * wordList = ["hot","dot","dog","lot","log","cog"]
  * @author shine
  * @version 1.0
  * @date 2019/9/24 16:23
@@ -63,6 +65,7 @@ public class Test127 {
 		for (int i = 0; i < word1.length(); i++) {
 			if (word1.charAt(i) != word2.charAt(i))
 				count++;
+			if(count==2) return false;
 		}
 		return count == 1;
 	}
@@ -70,12 +73,12 @@ public class Test127 {
 	/**
 	 * @param beginWord
 	 * @param wordList  单词词典
-	 * @param graph     Map<单词节点，相邻节点单词列表>
+	 * @param graph     Map<单词节点，相邻节点单词列表>  邻接表
 	 */
 	private void constructGraph(String beginWord, List<String> wordList, Map<String, List<String>> graph) {
 		wordList.add(beginWord);
 		for (int i = 0; i < wordList.size(); i++) {
-			graph.put(wordList.get(i), new ArrayList<>());
+			graph.put(wordList.get(i), new ArrayList<>()); // 初始化邻接表
 		}
 		for (int i = 0; i < wordList.size(); i++) {
 			for (int j = i + 1; j < wordList.size(); j++) {

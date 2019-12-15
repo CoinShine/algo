@@ -10,7 +10,8 @@ import java.util.Arrays;
  * 找出给定目标值在数组中的开始位置和结束位置。
  * 你的算法时间复杂度必须是 O(log n) 级别。
  * 如果数组中不存在目标值，返回 [-1, -1]。
- *
+ * 输入: nums = [5,7,7,8,8,10], target = 8
+ * 输出: [3,4]
  * @author shine
  * @version 1.0
  * @date 2019/9/18 16:18
@@ -62,9 +63,9 @@ public class Test34 {
 
 	@Test
 	public void test01(){
-		int[] nums=new int[]{1,2,3,4,6,6,6,6};
-		//int[] nums=new int[0];
-		int[] ints = searchRange(nums, 1);
+		//int[] nums=new int[]{1,2,3,4,6,6,6,6};
+		int[] nums=new int[0];
+		int[] ints = searchRange(nums, 0);
 		System.out.println(Arrays.toString(ints));
 	}
 }

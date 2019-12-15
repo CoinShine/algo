@@ -36,6 +36,7 @@
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
 | :------: | :----------------------------------------------------------: | :----: | :------: |
+|   871    | [最少加油次数](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test871.java) |  Hard  |    高    |
 |   455    | [分发饼干](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test455.java) |  Easy  |    低    |
 |   376    | [摇摆序列](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test376.java) | Medium |    低    |
 |   402    | [移除K个数字](https://github.com/CoinShine/algo/blob/master/greedy-algo/src/main/java/com/shine/leetcode/Test402.java) | Medium |    中    |
@@ -133,7 +134,6 @@
 
 | 题目序号 |                           问题描述                           |  难度  | 出现频次 |
 | :------: | :----------------------------------------------------------: | :----: | :------: |
-|   871    | [最少加油次数](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test871.java) |  Hard  |    高    |
 |    70    | [爬楼梯](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test70.java) |  Easy  |    中    |
 |   198    | [打家劫舍](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test198.java) |  Easy  |    低    |
 |    53    | [最大字段和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test53.java) |  Easy  |    中    |
