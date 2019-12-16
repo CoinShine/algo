@@ -44,12 +44,10 @@ public class Test322 {
 		for (int i = 1; i <= amount; i++) {
 			dp[i]=-1; // dp[0] = 0
 		}
-		for (int i=1;i<=amount;i++){
+		for (int i=1;i<=amount;i++) {
 			for (int j = 0; j < coins.length; j++) {
-				if(coins[j]<=i&&dp[i-coins[j]]!=-1){ // 说明金额i可以由硬币组合而成
-					if(dp[i]==-1 || dp[i]>dp[i-coins[j]]+1){ // 首次组合金额i 或 组合金额i的硬币数比当前组合成金额i的硬币数小
-						dp[i]=dp[i-coins[j]]+1;  // 替换为小的硬币数
-					}
+				if (coins[j] <= i) {
+					dp[i] = Math.min(coins[i], dp[i - coins[j]] + 1);
 				}
 			}
 		}

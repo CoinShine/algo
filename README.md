@@ -136,7 +136,7 @@
 | :------: | :----------------------------------------------------------: | :----: | :------: |
 |    70    | [爬楼梯](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test70.java) |  Easy  |    中    |
 |   198    | [打家劫舍](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test198.java) |  Easy  |    低    |
-|    53    | [最大字段和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test53.java) |  Easy  |    中    |
+|    53    | [最大子序和](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test53.java) |  Easy  |    中    |
 |   322    | [找零钱](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test322.java) | Medium |    中    |
 |   120    | [三角形](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test120.java) | Medium |    低    |
 |   300    | [最长上升子序列](https://github.com/CoinShine/algo/blob/master/dynamic-pro/src/main/java/com/shine/leetcode/Test300.java) | Medium |    中    |

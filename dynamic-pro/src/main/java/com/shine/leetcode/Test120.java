@@ -36,10 +36,10 @@ public class Test120 {
 		int size = triangle.size(); // 因为是三角形，所以下边应该比上边长
 		List<Integer> low = triangle.get(size - 1);
 		int[][] dp = new int[size][low.size()]; // 记录最优解二维数组，初始化都为0
-		int[] bottom = dp[size - 1];
-		for (int i = 0; i < low.size(); i++) {
-			bottom[i] = low.get(i); // 将三角形的最后一行赋值
-		}
+		//int[] bottom = dp[size - 1];
+		//for (int i = 0; i < low.size(); i++) {
+		//	bottom[i] = low.get(i); // 将三角形的最后一行赋值
+		//}
 		for (int i = size - 2; i >= 0; i--) {
 			for (int j = 0; j <= i; j++) { // 第i行 有i个元素
 				dp[i][j] = Math.min(dp[i + 1][j], dp[i + 1][j + 1]) + triangle.get(i).get(j);
