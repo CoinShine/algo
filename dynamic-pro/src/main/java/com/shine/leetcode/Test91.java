@@ -44,15 +44,13 @@ public class Test91 {
 			if (s.charAt(i) == '0') {
 				continue;
 			}
-			int ans1 = dp[i + 1];
 			//判断两个字母组成的数字是否小于等于 26
-			int ans2 = 0;
 			int ten = (s.charAt(i) - '0') * 10;
 			int one = s.charAt(i + 1) - '0';
-			if (ten + one <= 26) {
-				ans2 = dp[i + 2];
+			if (ten + one > 26) {
+				dp[i+2] = 0;
 			}
-			dp[i] = ans1 + ans2;
+			dp[i] = dp[i + 1] + dp[i + 2];
 
 		}
 		return dp[0];
