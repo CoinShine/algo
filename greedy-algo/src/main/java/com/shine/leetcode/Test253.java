@@ -1,7 +1,6 @@
 package com.shine.leetcode;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -22,10 +21,10 @@ public class Test253 {
 			return 0;
 
 		// 将输入的一系列会议按照会议的起始时间排序。
-		Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
+		Arrays.sort(intervals, (i1,i2)->i1[0]-i2[0]);
 
 		// 用一个最小堆来维护目前开辟的所有会议室，最小堆里的会议室按照会议的结束时间排序。
-		PriorityQueue<int[]> heap = new PriorityQueue<>(intervals.length, Comparator.comparingInt(a -> a[1]));
+		PriorityQueue<int[]> heap = new PriorityQueue<>(intervals.length, (i1,i2)->i1[1]-i2[1]);
 
 		// 让第一个会议在第一个会议室里举行。
 		heap.offer(intervals[0]);

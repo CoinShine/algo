@@ -2,7 +2,6 @@ package com.shine.leetcode;
 
 import org.junit.Test;
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -24,7 +23,7 @@ import java.util.PriorityQueue;
  */
 public class Test407 {
 	public int trapRainWater(int[][] heightMap) {
-		PriorityQueue<Item> queue = new PriorityQueue<>(Comparator.comparingInt(o -> o.h)); // 根据h排序的小顶堆
+		PriorityQueue<Item> queue = new PriorityQueue<>((i1,i2)->i1.h-i2.h); // 根据h排序的小顶堆
 		if (heightMap.length <= 2 && heightMap[0].length <= 2) return 0; // 如果小于两排则不能积水
 		// 首先对二维数组的四周初始化
 		int row = heightMap.length; // 行数

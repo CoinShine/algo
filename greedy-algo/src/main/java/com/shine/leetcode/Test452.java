@@ -32,7 +32,7 @@ public class Test452 {
 
 		int shootNum = 1; // 初始弓箭的数量
 		int endShoot = points[0][1]; // 初始射击区间的尾部
-		for (int i = 0; i < points.length; i++) {
+		for (int i = 1; i < points.length; i++) {
 			if (points[i][0] <= endShoot) {  // 如果新气球的开始小于等于当前射击区间的尾部，说明可以把新气球引爆
 				if (points[i][1] < endShoot) { // 如果新气球的结束小于当前区间的尾部，则更新当前射击区间
 					endShoot = points[i][1];

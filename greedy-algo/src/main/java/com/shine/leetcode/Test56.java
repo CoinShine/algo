@@ -35,7 +35,7 @@ import java.util.List;
 public class Test56 {
 	public int[][] merge(int[][] intervals) {
 		// 将所有的区间按照起始时间的先后顺序排序
-		Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
+		Arrays.sort(intervals, (i1,i2)->i1[0]-i2[0]);
 
 		// 定义一个 previous 变量，初始化为 null
 		int[] previous = null;

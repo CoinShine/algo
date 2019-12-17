@@ -27,9 +27,6 @@ public class Test55 {
 			}
 			jump++;
 		}
-		if(jump>=index.length){
-			return true;
-		}
-		return false;
+		return jump >= index.length;
 	}
 }
