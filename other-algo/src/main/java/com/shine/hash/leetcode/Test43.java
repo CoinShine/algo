@@ -2,6 +2,8 @@ package com.shine.hash.leetcode;
 
 import org.junit.Test;
 
+import java.util.stream.IntStream;
+
 /**
  * description: 字符串相乘
  * 给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。
@@ -32,13 +34,14 @@ public class Test43 {
 		int[] result = new int[chars1.length+chars2.length]; // 定义结果数组
 		int[] nums1 = new int[chars1.length]; // 定义int数组
 		int[] nums2 = new int[chars2.length];
-		for (int i = 0; i < chars1.length; i++) {
-			nums1[i]=chars1[i]-'0';
-		}
-
-		for (int i = 0; i < chars2.length; i++) {
-			nums2[i] = chars2[i]-'0';
-		}
+		//for (int i = 0; i < chars1.length; i++) {
+		//	nums1[i]=chars1[i]-'0';
+		//}
+		IntStream.range(0,chars1.length).forEach(i->nums1[i]=chars1[i]-'0');
+		IntStream.range(0,chars2.length).forEach(i->nums2[i]=chars2[i]-'0');
+		//for (int i = 0; i < chars2.length; i++) {
+		//	nums2[i] = chars2[i]-'0';
+		//}
 
 		// 根据公式从低位取出每一位相乘
 		for (int i = 0; i < nums1.length; i++) {

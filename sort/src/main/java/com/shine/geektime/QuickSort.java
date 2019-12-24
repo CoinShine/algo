@@ -35,10 +35,18 @@ public class QuickSort {
 		int i = l, j = r;
 		int x = a[i]; // 基准数，可以选择头尾中三数取中
 		while (i < j) {
-			while (i < j && a[j] >= x) j--; // 从右侧遍历填坑
-			if (i < j) a[i++] = a[j];
-			while (i < j && a[i] < x) i++; //从左侧遍历填坑
-			if (i < j) a[j--] = a[i];
+			while (i < j && a[j] >= x){
+				j--; // 从右侧遍历填坑
+			}
+			if (i < j){
+				a[i++] = a[j];
+			}
+			while (i < j && a[i] < x) {
+				i++; //从左侧遍历填坑
+			}
+			if (i < j){
+				a[j--] = a[i];
+			}
 		}
 		// 退出时i==j
 		a[i] = x;
@@ -51,4 +59,5 @@ public class QuickSort {
 		quickSort(a, 6);
 		System.out.println(Arrays.toString(a));
 	}
+
 }

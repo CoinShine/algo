@@ -75,7 +75,7 @@ public class Test84 {
 
 	@Test
 	public void test01(){
-		int[] heights = {6, 7, 5, 2, 4, 5, 9, 3};
+		int[] heights = {6, 7, 5, 2, 4, 5, 9, 3,3};
 		System.out.println(largestRectangleArea(heights));
 	}
 }

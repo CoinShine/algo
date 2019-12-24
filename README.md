@@ -120,7 +120,7 @@
 |    01    | [两数相加](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test01.java) |  Easy  |    高    |
 |    15    | [三数相加(须分析答案)](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test15.java) | Medium |    中    |
 |    43    | [字符串相乘](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Medium |    中    |
-|    10    | [正则表达式匹配](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Hard |    中    |
+|    10    | [正则表达式匹配](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/string/leetcode/Test10.java) | Hard |    中    |
 |    28    | [实现 strStr()](https://github.com/CoinShine/algo/blob/master/other-algo/src/main/java/com/shine/hash/leetcode/Test43.java) | Easy |    中    |
 
 ### 数组

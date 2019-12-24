@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.stream.IntStream;
 
 /**
- * description: 最小窗口子串
+ * description: 最小覆盖子串
  * 给你一个字符串 S、一个字符串 T，
  * 请在字符串 S 里面找出：包含 T 所有字母的最小子串。
  * @author shine

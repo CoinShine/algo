@@ -1,6 +1,7 @@
 package com.shine.leetcode;
 
 
+import org.junit.Test;
 
 /**
  * description:分割链表
@@ -49,5 +50,10 @@ public class Test86 {
 		 ListNode(int x) {
 			val = x;
 		}
+	}
+
+	@Test
+	public void test01(){
+
 	}
 }

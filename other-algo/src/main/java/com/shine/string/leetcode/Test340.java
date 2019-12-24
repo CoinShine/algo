@@ -1,5 +1,7 @@
 package com.shine.string.leetcode;
 
+import org.junit.Test;
+
 import java.util.HashMap;
 
 /**
@@ -43,16 +45,12 @@ public class Test340 {
 
 		for (int i = 0, j = 0; j < s.length(); j++) {
 			char cj = s.charAt(j);
-
 			// Step 1. count the character
 			map.put(cj, map.getOrDefault(cj, 0) + 1);
-
 			// Step 2. clean up the map if condition doesn't match
 			while (map.size() > k) {
 				char ci = s.charAt(i);
-
 				map.put(ci, map.get(ci) - 1);
-
 				if (map.get(ci) == 0) {
 					map.remove(ci); // that character count has become 0
 				}
@@ -64,5 +62,13 @@ public class Test340 {
 		}
 
 		return max;
+	}
+
+
+	@Test
+	public void test01(){
+		String s = "eecebeee";
+		int length = lengthOfLongestSubstringKDistinct(s, 2);
+		System.out.println(length);
 	}
 }

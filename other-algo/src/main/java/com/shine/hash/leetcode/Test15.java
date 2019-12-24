@@ -79,11 +79,7 @@ public class Test15 {
 				}else if(a+nums[m]+nums[n] < 0){ // 说明m太小
 					m++;
 				}else{
-					List<Integer> list = new ArrayList<>();
-					list.add(a);
-					list.add(nums[m]);
-					list.add(nums[n]);
-					re.add(list);
+					re.add(List.of(a,nums[m],nums[n]));
 					m++;
 					n--;
 				}
