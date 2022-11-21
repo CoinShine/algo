@@ -9,17 +9,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>dynamic-pro</module>
-        <module>graph</module>
-        <module>greedy-algo</module>
-        <module>heap</module>
-        <module>interview</module>
-        <module>linked-list</module>
-        <module>other-algo</module>
-        <module>search</module>
-        <module>sort</module>
-        <module>stack-queue</module>
-        <module>tree</module>
+        <module>2022</module>
+        <module>old</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
